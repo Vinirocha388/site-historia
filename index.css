@@ -169,8 +169,24 @@ h1 {
 /* Simulados */
 
 .simulado1 {
-    background-color: #9A1915;
+    border: 2px solid var(--vermelho);
+    margin: 30px;
+    justify-content: space-between;
+    border-radius: 20px;
 }
+
+.simulados ul {
+    margin: 20px;
+    right: 0;
+}
+
+.simulados li {
+    display: inline-block;
+    padding: 0 230px;
+    color: var(--preto);
+}
+
+
 
 /* Footer */
 
