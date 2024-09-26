@@ -1,14 +1,31 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Configurações Gerais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte);
 }
 
+/* Padrões */
 
+:root {
+    --vermelho: #cc0000;
+    --vermelho_escuro: #9A1915;
+    --preto: #000;
+    --branco: #ffffff;
+    --fonte: "Montserrat", sans-serif;
+}
 
-/* Estilos do Header */
+/* Hearder */
+
 .header {
-    background-color: #cc0000; /* Vermelho SENAI */
+    background-color: var(--vermelho);
+    /* Vermelho SENAI */
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -29,7 +46,7 @@
 
 .logo-senai img,
 .logo-sesi img {
-    width: 80px; /* Tamanho dos logotipos */
+    width: 80px;
     height: auto;
     margin-right: 10px;
 }
@@ -37,7 +54,7 @@
 .divider {
     height: 30px;
     width: 2px;
-    background-color: white;
+    background-color: var(--branco);
     margin: 0 20px;
 }
 
@@ -67,10 +84,9 @@
 }
 
 .nav-list a:hover {
-    color: #f1f1f1;
+    color: var(--branco);
 }
 
-/* Ícone do Menu para Mobile */
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -83,19 +99,17 @@
 .menu-icon span {
     display: block;
     height: 3px;
-    background-color: white;
+    background-color: var(--branco);
 }
 
-  
-  .banner {
+.banner {
     padding: 0;
     width: 100%;
     height: 600px;
     filter: brightness(0.6);
-  
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -105,38 +119,39 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
-  }
-  
-  .banner-titulo {
-    font-family: "Montserrat", sans-serif;
+}
+
+.banner-titulo {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     margin-bottom: 100px;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 48px;
     font-weight: bold;
     text-align: left;
     z-index: 3;
     color: white;
     margin-right: 950px;
-  }
-  
-  #line {
+}
+
+#line {
     height: 5px;
     margin: 20px auto;
     width: 20%;
-    background-color: #9A1915;
-  }
-  
+    background-color: var(--vermelho_escuro);
+}
+
+/* Noticias */
 
 
+/* Footer */
 
-/* Estilos Gerais do Footer */
 .footer {
-    background-color: #cc0000; /* Vermelho do SENAI */
+    background-color: var(--vermelho);
+    /* Vermelho do SENAI */
     padding: 20px 0;
     color: white;
     text-align: center;
@@ -150,7 +165,7 @@
 }
 
 .social-media a img {
-    width: 30px; 
+    width: 30px;
     height: auto;
 }
 
@@ -160,7 +175,7 @@
     align-items: center;
     gap: 40px;
     padding: 20px 0;
-    background-color: #8B1D1B; 
+    background-color: var(--vermelho_escuro);
 }
 
 .footer-location {
@@ -182,5 +197,5 @@
 .footer-divider {
     height: 50px;
     width: 2px;
-    background-color: white;
+    background-color: var(--branco);
 }
