@@ -18,14 +18,13 @@
     --vermelho_escuro: #9A1915;
     --preto: #000;
     --branco: #ffffff;
-    --fonte: "Montserrat", sans-serif;
+    --fonte_texto: "Montserrat", sans-serif;
 }
 
 /* Hearder */
 
 .header {
     background-color: var(--vermelho);
-    /* Vermelho SENAI */
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -128,15 +127,6 @@
     margin-bottom: 100px;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: left;
-    z-index: 3;
-    color: white;
-    margin-right: 950px;
-}
-
 #line {
     height: 5px;
     margin: 20px auto;
@@ -144,8 +134,43 @@ h1 {
     background-color: var(--vermelho_escuro);
 }
 
+/* Calendário */
+
+h1 {
+    font-size: 40px;
+    margin: 20px;
+}
+
 /* Noticias */
 
+.container_frase {
+    width: 750px;
+    height: 500px;
+    border: 1px solid;
+    margin: auto;
+    border-radius: 50px;
+}
+
+
+#container1 {
+    background: linear-gradient(#00000050, #00000050), url(image/home/jose_alencar.jpeg) center no-repeat;
+}
+
+.texto1 {
+    width: 650px;
+    margin: 30px;
+    margin-top: 200px;
+    color: var(--branco);
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Simulados */
+
+.simulado1 {
+    background-color: #9A1915;
+}
 
 /* Footer */
 
