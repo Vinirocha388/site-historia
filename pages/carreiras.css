@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --branco: #fff; 
+    --vermelho: #cc0000;
+    --vermelho-claro: #db1b1b;
+    --preto: #000;
+}
+
+.container_header {
+    background-color: var(--vermelho);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    gap: 0.33rem;
+    align-items: center;
+}
+
+.container_img {
+    height: 6rem;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_img img{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.divisoria {
+    background-color: var(--branco);
+    height: 80%;
+    width: 0.15rem;
+    display: flex;
+}
+
+.nav {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.nav a {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: var(--vermelho-claro);
+}
+
+.container_menu {
+    height: 100%;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_menu img {
+    width: 30%;
+    height: 50%;
+}

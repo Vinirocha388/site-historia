@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 50 50" style="enable-background:new 0 0 512 512" xml:space="preserve">
+  <g>
+    <g fill="#263238">
+      <path d="M46 13.545H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h42a2 2 0 0 1 2 2v2.545a2 2 0 0 1-2 2zM46 28.273H4a2 2 0 0 1-2-2v-2.545a2 2 0 0 1 2-2h42a2 2 0 0 1 2 2v2.545a2 2 0 0 1-2 2zM46 43H4a2 2 0 0 1-2-2v-2.545a2 2 0 0 1 2-2h42a2 2 0 0 1 2 2V41a2 2 0 0 1-2 2z" fill="#ffffff" opacity="1" data-original="#263238"/>
+    </g>
+  </g>
+</svg>
