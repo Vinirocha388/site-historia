@@ -7,6 +7,7 @@
 :root {
     --vermelho: #cc0000;
     --vermelho_escuro: #9A1915;
+    --cinza: #D9D9D9;
     --preto: #000;
     --branco: #ffffff;
     --fonte_texto: "Montserrat", sans-serif;
@@ -21,13 +22,14 @@
     font-family: var(--fonte);
 }
 
-/* Estilização menu */
+/* Menu */
 
 .menu-materias ul {
     background-color: var(--vermelho);
     backdrop-filter: blur(10px);
     position: absolute;
     top: 90px;
+    z-index: 9999;
     left: 80%;
     width: 15%;
     height: 0;
@@ -169,8 +171,40 @@
     height: 50%;
 }
 
+/* Banner */
 
+.banner {
+    width: 100%;
+    height: 45rem;
+}
 
+.banner img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.68);
+}
+
+/* Navegação */
+
+.navegacao {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.navegacao a {
+    background-color: var(--cinza);
+    padding: 4px 30px;
+    border-radius: 18px;
+    text-decoration: none;
+}
+
+.navegacao li {
+    font-size: 15px;
+    color: var(--preto);
+    list-style-type: none;
+}
 
 /* Calendário */
 
@@ -188,7 +222,6 @@ h1 {
     margin: auto;
     border-radius: 50px;
 }
-
 
 #container1 {
     background: linear-gradient(#00000050, #00000050), url(image/home/jose_alencar.jpeg) center no-repeat;
