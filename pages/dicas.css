@@ -1,12 +1,42 @@
+/* Hearder */
 
-/* header*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonte);
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/mnt/data/36EA5938-032E-48F0-BB08-A0D691E8F26A.jpeg'); /* Use a imagem de fundo fornecida */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #E42624;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo-container img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+   
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 /* Estilização menu */
 .menu-materias ul{
@@ -83,166 +113,6 @@
       border: 0px solid black;
     }
 
-/* Hearder */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.header {
-    background-color: var(--vermelho);
-    /* Vermelho SENAI */
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logos {
-    display: flex;
-    align-items: center;
-}
-
-.logo-senai img,
-.logo-sesi img {
-    width: 80px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.divider {
-    height: 30px;
-    width: 2px;
-    background-color: var(--branco);
-    margin: 0 20px;
-}
-
-.nav {
-    flex-grow: 1;
-    text-align: right;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-list li {
-    display: inline;
-}
-
-.nav-list a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-list a:hover {
-    color: var(--branco);
-}
-
-.menu-icon {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.menu-icon span {
-    display: block;
-    height: 3px;
-    background-color: var(--branco);
-}
-
-.banner {
-    padding: 0;
-    width: 100%;
-    height: 600px;
-    filter: brightness(0.6);
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-.banner-titulo {
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    margin-bottom: 100px;
-}
-
-h1 {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: left;
-    z-index: 3;
-    color: white;
-    margin-right: 950px;
-}
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('/mnt/data/36EA5938-032E-48F0-BB08-A0D691E8F26A.jpeg'); /* Use a imagem de fundo fornecida */
-    background-size: cover;
-    background-position: center;
-}
-
-    background-image: url(../img/fundo.png);
-}
-
-header {
-    background-color: #E42624;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-}
-
-.logo-container img {
-    height: 60px;
-}
-nav ul {
-    list-style: none;
-    display: flex;  
-}
-
-    gap: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 /* quadrinho */
 main {
     display: flex;
@@ -261,6 +131,7 @@ main {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 /* footer */
 
@@ -314,4 +185,3 @@ main {
     width: 2px;
     background-color:white;
 }
-
