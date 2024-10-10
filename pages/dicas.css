@@ -1,3 +1,88 @@
+
+/* header*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+
+/* Estilização menu */
+.menu-materias ul{
+    background-color: #ff0000;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 82px;
+    z-index: 9999;
+    left: 70%;
+    width: 405px;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 0;
+  }
+  
+  .menu-materias.abrir ul {
+    visibility: visible;
+    height: calc(72vh - 7px);
+  }
+  
+    .menu-materias ul li:hover{
+      background-color: #990f0fc4;
+      }
+    
+    .menu-materias ul li {
+      display: block;
+      padding: 10px 30px;
+      font-size: 16px ;
+      text-align: center;
+    }
+  
+    .menu-materias ul li a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    #btn-menu{
+      width: 45px;
+      height: 45px;
+      border: 0px solid #ff0000;
+      background: transparent;
+      border-radius: 10px;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      cursor: pointer;
+    }
+  
+    .linha{
+      width: 40px;
+      height: 3px;
+      background-color: black;
+      display: block;
+      margin: 10px auto;
+      position: relative;
+      transform-origin: center;
+      transition: .2s;
+    }
+    #btn-menu.ativo .linha:nth-child(1){
+      transform: translateY(12px) rotate(-45deg);
+      background-color: black;
+    }
+    #btn-menu.ativo .linha:nth-child(3){
+      transform: translateY(-15px) rotate(45deg);
+      background-color: black;
+    }
+    #btn-menu.ativo .linha:nth-child(2){
+      width: 0;
+
+      height: 4px;
+    }
+    #btn-menu.ativo{
+      border: 0px solid black;
+    }
+
 /* Hearder */
 
 * {
@@ -6,11 +91,130 @@
     box-sizing: border-box;
 }
 
+.header {
+    background-color: var(--vermelho);
+    /* Vermelho SENAI */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logo-senai img,
+.logo-sesi img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.divider {
+    height: 30px;
+    width: 2px;
+    background-color: var(--branco);
+    margin: 0 20px;
+}
+
+.nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--branco);
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    background-color: var(--branco);
+}
+
+.banner {
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    filter: brightness(0.6);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner-titulo {
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: left;
+    z-index: 3;
+    color: white;
+    margin-right: 950px;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('/mnt/data/36EA5938-032E-48F0-BB08-A0D691E8F26A.jpeg'); /* Use a imagem de fundo fornecida */
     background-size: cover;
     background-position: center;
+}
+
+    background-image: url(../img/fundo.png);
 }
 
 header {
@@ -25,11 +229,12 @@ header {
 .logo-container img {
     height: 60px;
 }
-
 nav ul {
     list-style: none;
-    display: flex;
-   
+    display: flex;  
+}
+
+    gap: 15px;
 }
 
 nav ul li a {
@@ -90,3 +295,4 @@ nav ul li a {
     width: 2px;
     background-color:white;
 }
+
