@@ -239,16 +239,6 @@ body {
     cursor: pointer;
 }
 
-.option::after {
-    content: ">";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    font-weight: bold;
-    color: #999;
-}
 
 .option:hover {
     background-color: #e6e6e6;
@@ -275,6 +265,58 @@ body {
 .img-container {
     background-color: black;
 
+}
+
+/* dropdown */
+.carreiras {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.option {
+    background-color: #f1f1f1;
+    padding: 15px;
+    width: 45%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+.option .arrow {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.description {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.option.active .description {
+    display: block;
 }
 
 

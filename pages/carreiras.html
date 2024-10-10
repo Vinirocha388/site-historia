@@ -75,14 +75,59 @@
             </div>
         </section>
         <section class="carreiras">
-            <div class="options">
-                <div class="option">Pesquisador Acadêmico</div>
-                <div class="option">Arqueologia</div>
-                <div class="option">Jornalismo e Comunicação</div>
-                <div class="option">Consultoria Histórica</div>
-                <div class="option">Gestão de Patrimônio</div>
+            <div class="dropdown">
+                <div class="option" onclick="toggleDescription(this)">
+                    Pesquisador Acadêmico
+                    <span class="arrow">&#8250;</span>
+                    <div class="description">
+                        Pesquisadores acadêmicos dedicam-se ao estudo aprofundado em áreas específicas, produzindo artigos, relatórios e análises científicas.
+                    </div>
+                </div>
+                <div class="option" onclick="toggleDescription(this)">
+                    Arqueologia
+                    <span class="arrow">&#8250;</span>
+                    <div class="description">
+                        A arqueologia envolve o estudo de civilizações antigas através da escavação e análise de artefatos.
+                    </div>
+                </div>
+                <div class="option" onclick="toggleDescription(this)">
+                    Jornalismo e Comunicação
+                    <span class="arrow">&#8250;</span>
+                    <div class="description">
+                        Jornalistas e comunicadores trabalham na coleta, redação e transmissão de notícias e informações.
+                    </div>
+                </div>
+                <div class="option" onclick="toggleDescription(this)">
+                    Consultoria Histórica
+                    <span class="arrow">&#8250;</span>
+                    <div class="description">
+                        Consultores históricos ajudam a fornecer contextos e aconselhamento em projetos que exigem precisão histórica.
+                    </div>
+                </div>
+                <div class="option" onclick="toggleDescription(this)">
+                    Gestão de Patrimônio
+                    <span class="arrow">&#8250;</span>
+                    <div class="description">
+                        Gestores de patrimônio cultural são responsáveis por preservar, gerenciar e promover o patrimônio histórico e cultural.
+                    </div>
+                </div>
             </div>
         </section>
+        
+        <script>
+            function toggleDescription(element) {
+                // Remove a classe 'active' de todos os elementos
+                const allOptions = document.querySelectorAll('.option');
+                allOptions.forEach(option => {
+                    if (option !== element) {
+                        option.classList.remove('active');
+                    }
+                });
+        
+                // Adiciona ou remove a classe 'active' no elemento clicado
+                element.classList.toggle('active');
+            }
+        </script>
     </main>
 
 
