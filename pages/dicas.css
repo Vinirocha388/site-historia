@@ -85,6 +85,12 @@
 
 /* Hearder */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header {
     background-color: var(--vermelho);
     /* Vermelho SENAI */
@@ -200,31 +206,93 @@ h1 {
 }
 
 
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('/mnt/data/36EA5938-032E-48F0-BB08-A0D691E8F26A.jpeg'); /* Use a imagem de fundo fornecida */
     background-size: cover;
     background-position: center;
+}
+
     background-image: url(../img/fundo.png);
 }
+
 header {
     background-color: #E42624;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
+
 .logo-container img {
     height: 60px;
 }
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex;  
+}
+
     gap: 15px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #E42624;
+    /* Vermelho do SENAI */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: auto;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+    background-color: #9A1914;
+}
+
+.footer-location {
+    max-width: 400px;
+    text-align: left;
+}
+
+.footer-location h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.footer-location p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-divider {
+    height: 50px;
+    width: 2px;
+    background-color:white;
 }
 
