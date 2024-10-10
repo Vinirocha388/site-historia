@@ -1,4 +1,95 @@
+
+/* header*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+
+/* Estilização menu */
+.menu-materias ul{
+    background-color: #ff0000;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 82px;
+    z-index: 9999;
+    left: 70%;
+    width: 405px;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 0;
+  }
+  
+  .menu-materias.abrir ul {
+    visibility: visible;
+    height: calc(72vh - 7px);
+  }
+  
+    .menu-materias ul li:hover{
+      background-color: #990f0fc4;
+      }
+    
+    .menu-materias ul li {
+      display: block;
+      padding: 10px 30px;
+      font-size: 16px ;
+      text-align: center;
+    }
+  
+    .menu-materias ul li a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    #btn-menu{
+      width: 45px;
+      height: 45px;
+      border: 0px solid #ff0000;
+      background: transparent;
+      border-radius: 10px;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      cursor: pointer;
+    }
+  
+    .linha{
+      width: 40px;
+      height: 3px;
+      background-color: black;
+      display: block;
+      margin: 10px auto;
+      position: relative;
+      transform-origin: center;
+      transition: .2s;
+    }
+    #btn-menu.ativo .linha:nth-child(1){
+      transform: translateY(12px) rotate(-45deg);
+      background-color: black;
+    }
+    #btn-menu.ativo .linha:nth-child(3){
+      transform: translateY(-15px) rotate(45deg);
+      background-color: black;
+    }
+    #btn-menu.ativo .linha:nth-child(2){
+      width: 0;
+
+      height: 4px;
+    }
+    #btn-menu.ativo{
+      border: 0px solid black;
+    }
+
 /* Hearder */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .header {
     background-color: var(--vermelho);
@@ -114,99 +205,48 @@ h1 {
     margin-right: 950px;
 }
 
-/* Resetando margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('/mnt/data/36EA5938-032E-48F0-BB08-A0D691E8F26A.jpeg'); /* Use a imagem de fundo fornecida */
+    background-size: cover;
+    background-position: center;
 }
 
-/* Estilos do Cabeçalho */
+    background-image: url(../img/fundo.png);
+}
+
 header {
-    background-color: #d71f26;
-    color: white;
-    padding: 15px;
+    background-color: #E42624;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
-header .logo img {
-    height: 50px;
+.logo-container img {
+    height: 60px;
 }
-
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex;  
 }
 
-nav ul li {
-    margin-left: 20px;
+    gap: 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos da área principal */
-.main-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.card {
-    background-color: #fff;
-    border: 2px solid #444;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.card h2 {
     font-size: 18px;
-    color: #333;
 }
 
-/* Padrões */
-
-:root {
-    --vermelho: #cc0000;
-    --vermelho_escuro: #9A1915;
-    --preto: #000;
-    --branco: #ffffff;
-    --fonte: "Montserrat", sans-serif;
-}
-
-
-#line {
-    height: 5px;
-    margin: 20px auto;
-    width: 20%;
-    background-color: #ffffff;
-}
-
-
-/* Footer */
+/* footer */
 
 .footer {
-    background-color: var(--vermelho);
+    background-color: #E42624;
     /* Vermelho do SENAI */
     padding: 20px 0;
     color: white;
@@ -231,7 +271,7 @@ nav ul li a:hover {
     align-items: center;
     gap: 40px;
     padding: 20px 0;
-    background-color: var(--vermelho_escuro);
+    background-color: #9A1914;
 }
 
 .footer-location {
@@ -253,5 +293,6 @@ nav ul li a:hover {
 .footer-divider {
     height: 50px;
     width: 2px;
-    background-color: rgb(255, 255, 255);
+    background-color:white;
 }
+
