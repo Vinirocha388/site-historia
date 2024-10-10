@@ -199,7 +199,7 @@ main {
     display: flex;
     padding: 2rem 0;
     justify-content: center;
-    gap: 7rem;
+    gap: 20%;
 }
 
 .navegacao a {
@@ -207,6 +207,10 @@ main {
     padding: 4px 30px;
     border-radius: 18px;
     text-decoration: none;
+}
+
+.navegacao a:hover {
+    background-color: var(--vermelho);
 }
 
 .navegacao li {
