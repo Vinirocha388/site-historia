@@ -1,3 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+/* Estilização menu */
+.menu-materias ul{
+    background-color: #ff0000;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 82px;
+    z-index: 9999;
+    left: 70%;
+    width: 405px;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 0;
+  }
+  
+  .menu-materias.abrir ul {
+    visibility: visible;
+    height: calc(72vh - 7px);
+  }
+  
+    .menu-materias ul li:hover{
+      background-color: #990f0fc4;
+      }
+    
+    .menu-materias ul li {
+      display: block;
+      padding: 10px 30px;
+      font-size: 16px ;
+      text-align: center;
+    }
+  
+    .menu-materias ul li a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    #btn-menu{
+      width: 45px;
+      height: 45px;
+      border: 0px solid #ff0000;
+      background: transparent;
+      border-radius: 10px;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      cursor: pointer;
+    }
+  
+    .linha{
+      width: 40px;
+      height: 3px;
+      background-color: black;
+      display: block;
+      margin: 10px auto;
+      position: relative;
+      transform-origin: center;
+      transition: .2s;
+    }
+    #btn-menu.ativo .linha:nth-child(1){
+      transform: translateY(12px) rotate(-45deg);
+      background-color: black;
+    }
+    #btn-menu.ativo .linha:nth-child(3){
+      transform: translateY(-15px) rotate(45deg);
+      background-color: black;
+    }
+    #btn-menu.ativo .linha:nth-child(2){
+      width: 0;
+
+      height: 4px;
+    }
+    #btn-menu.ativo{
+      border: 0px solid black;
+    }
+
+
+
+
 .header {
     background-color: var(--vermelho);
     padding: 15px 0;
