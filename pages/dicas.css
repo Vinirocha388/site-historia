@@ -38,6 +38,25 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* quadrinho */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* footer */
 
 .footer {
