@@ -8,10 +8,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/mnt/data/36EA5938-032E-48F0-BB08-A0D691E8F26A.jpeg'); /* Use a imagem de fundo fornecida */
+    background-image: url('/image/dicas/fundo.png'); /* Use a imagem de fundo fornecida */
     background-size: cover;
     background-position: center;
-    background-image: url(../image/fundo.png);
+    background-image: url(../image/dicas/fundo.png);
 }
 
 .container_header {
