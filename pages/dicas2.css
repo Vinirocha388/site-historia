@@ -24,6 +24,8 @@
 
 /* Menu */
 
+/* Menu */
+
 .menu-materias ul {
     background-color: var(--vermelho);
     backdrop-filter: blur(10px);
@@ -184,13 +186,13 @@ main {
 
 .banner {
     width: 100%;
-    height: 45rem;
+    height: 46rem;
 }
 
 .banner img {
     width: 100%;
     height: 100%;
-    filter: brightness(0.68);
+    filter: brightness(0.78);
 }
 
 /* Navegação */
