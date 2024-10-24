@@ -1,3 +1,20 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Padrões */
+
+:root {
+    --vermelho: #cc0000;
+    --vermelho_escuro: #9A1915;
+    --cinza: #D9D9D9;
+    --preto: #000;
+    --branco: #ffffff;
+    --fonte_texto: "Montserrat", sans-serif;
+}
+
+/* Configurações Gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -154,44 +171,6 @@
     width: 30%;
     height: 50%;
 }
-
-/* Main */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Banner */
-
-.banner {
-    width: 100%;
-    height: 45rem;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    filter: brightness(0.68);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
