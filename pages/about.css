@@ -1,148 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Padrões */
+
+:root {
+    --vermelho: #cc0000;
+    --vermelho_escuro: #9A1915;
+    --cinza: #D9D9D9;
+    --preto: #000;
+    --branco: #ffffff;
+    --fonte_texto: "Montserrat", sans-serif;
+}
+
+/* Configurações Gerais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte);
 }
 
-/* Estilização menu */
-.menu-materias ul{
-    background-color: #ff0000;
+/* Menu */
+
+.menu-materias ul {
+    background-color: var(--vermelho);
     backdrop-filter: blur(10px);
     position: absolute;
-    top: 82px;
+    top: 90px;
     z-index: 9999;
-    left: 70%;
-    width: 405px;
+    left: 80%;
+    width: 15%;
     height: 0;
     visibility: hidden;
     transition: 0.5s;
     overflow: hidden;
     margin-right: 0;
-  }
-  
-  .menu-materias.abrir ul {
+}
+
+.menu-materias.abrir ul {
     visibility: visible;
     height: calc(72vh - 7px);
-  }
-  
-    .menu-materias ul li:hover{
-      background-color: #990f0fc4;
-      }
-    
-    .menu-materias ul li {
-      display: block;
-      padding: 10px 30px;
-      font-size: 16px ;
-      text-align: center;
-    }
-  
-    .menu-materias ul li a{
-      color: #ffffff;
-      text-decoration: none;
-    }
-    #btn-menu{
-      width: 45px;
-      height: 45px;
-      border: 0px solid #ff0000;
-      background: transparent;
-      border-radius: 10px;
-      position: absolute;
-      right: 30px;
-      top: 20px;
-      cursor: pointer;
-    }
-  
-    .linha{
-      width: 40px;
-      height: 3px;
-      background-color: black;
-      display: block;
-      margin: 10px auto;
-      position: relative;
-      transform-origin: center;
-      transition: .2s;
-    }
-    #btn-menu.ativo .linha:nth-child(1){
-      transform: translateY(12px) rotate(-45deg);
-      background-color: black;
-    }
-    #btn-menu.ativo .linha:nth-child(3){
-      transform: translateY(-15px) rotate(45deg);
-      background-color: black;
-    }
-    #btn-menu.ativo .linha:nth-child(2){
-      width: 0;
+}
 
-      height: 4px;
-    }
-    #btn-menu.ativo{
-      border: 0px solid black;
-    }
+.menu-materias ul li:hover {
+    background-color: var(--vermelho);
+}
 
+.menu-materias ul li {
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: center;
+}
 
+.menu-materias ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
 
-/* Estilos do Header */
-.header {
-    background-color: #cc0000; /* Vermelho SENAI */
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#btn-menu {
+    width: 40px;
+    height: 40px;
+    border: 0px solid var(--vermelho);
+    background: transparent;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.linha {
+    width: 40px;
+    height: 3px;
+    background-color: var(--branco);
+    display: block;
+    margin: 10px auto;
     position: relative;
+    transform-origin: center;
+    transition: .2s;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+#btn-menu.ativo .linha:nth-child(1) {
+    transform: translateY(12px) rotate(-45deg);
+    background-color: var(--branco);
+}
+
+#btn-menu.ativo .linha:nth-child(3) {
+    transform: translateY(-15px) rotate(45deg);
+    background-color: var(--branco);
+}
+
+#btn-menu.ativo .linha:nth-child(2) {
+    width: 0;
+    height: 4px;
+}
+
+#btn-menu.ativo {
+    border: 0px solid var(--preto);
+}
+
+/* Header */
+
+.container_header {
+    background-color: var(--vermelho);
+    width: 100%;
+    height: 6rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.5rem;
+    gap: 0.33rem;
     align-items: center;
 }
 
-.logos {
+.container_img {
+    height: 6rem;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_img img {
+    height: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
 }
 
-.logo-senai img,
-.logo-sesi img {
-    width: 80px; /* Tamanho dos logotipos */
-    height: auto;
-    margin-right: 10px;
-}
-
-.divider {
-    height: 30px;
-    width: 2px;
-    background-color: white;
-    margin: 0 20px;
+.divisoria {
+    background-color: var(--branco);
+    height: 80%;
+    width: 0.15rem;
+    display: flex;
 }
 
 .nav {
-    flex-grow: 1;
-    text-align: right;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    width: 70%;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 5rem;
 }
 
-.nav-list li {
-    display: inline;
-}
-
-.nav-list a {
-    color: white;
+.nav a {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: white;
+    font-size: 20px;
 }
 
-.nav-list a:hover {
-    color: #f1f1f1;
+.container_header .nav a {  
+    color:white
+}
+
+.nav a:hover {
+    background-color: var(--vermelho-claro);
+}
+
+.container_menu {
+    height: 100%;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_menu img {
+    width: 30%;
+    height: 50%;
 }
 
 /* Ícone do Menu para Mobile */
@@ -175,17 +204,18 @@ body {
 }
 
 h2, h3 {
-    color: black; /* Azul SESI SENAI */
+    color: black;
+    text-align: justify;
 }
 
 strong {
-    color: #cc0000; /* Vermelho SESI SENAI */
+    color: white;
 }
 
 hr {
     border: 0;
     height: 2px;
-    background-color: #cc0000; /* Vermelho SESI SENAI */
+    background-color: #cc0000; 
 }
 
 /* Estilo para o main e artigos */
@@ -205,15 +235,23 @@ hr {
 .article-title {
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .article-img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    margin: 20px 0;
-    display: block;
+    display: flex;
+    gap: 30px;
+    align-items: center ;
 }
+
+.article-img img {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
 
 .article-text p {
     font-size: 16px;
@@ -230,9 +268,9 @@ hr {
 }
 
 .descricao-integrantes img {
-    width: 150px;
+    width: 250px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 20%;
     margin: 10px 0;
 }
 
@@ -244,6 +282,12 @@ hr {
 .descricao-integrantes p {
     font-size: 16px;
     color: #555;
+}
+
+.descricao-integrantes hr { 
+    border: 0;
+    height: 2px;
+    background-color: #cc0000; 
 }
 
 /* Footer */
@@ -282,6 +326,7 @@ hr {
   
   .senai h3 {
     text-align: left;
+    color: white;
   }
   
   .senai p {
@@ -298,6 +343,7 @@ hr {
   
   .sesi h3 {
     text-align: left;
+    color: white ;
   }
   
   .sesi p {
