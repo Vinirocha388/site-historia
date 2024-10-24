@@ -170,10 +170,12 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
 
 /* quadrinho */
 
 main {
+}
 
 .content{
     color: rgb(0, 0, 0);
@@ -330,7 +332,7 @@ nav ul li a:hover {
     padding: 20px 0;
     color: white;
     text-align: center;
-
+}
 
 /* Footer */
 
