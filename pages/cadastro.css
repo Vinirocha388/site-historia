@@ -1,0 +1,220 @@
+/* Reset e estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Menu */
+
+.menu-materias ul {
+    background-color: red;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 90px;
+    z-index: 9999;
+    left: 80%;
+    width: 15%;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 0;
+}
+
+.menu-materias.abrir ul {
+    visibility: visible;
+    height: calc(72vh - 7px);
+}
+
+.menu-materias ul li:hover {
+    background-color: red;
+}
+
+.menu-materias ul li {
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu-materias ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+#btn-menu {
+    width: 40px;
+    height: 40px;
+    border: 0px solid red;
+    background: transparent;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+
+}
+
+.linha {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 10px auto;
+    position: relative;
+    transform-origin: center;
+    transition: .2s;
+}
+
+#btn-menu.ativo .linha:nth-child(1) {
+    transform: translateY(12px) rotate(-45deg);
+    background-color: white;
+}
+
+#btn-menu.ativo .linha:nth-child(3) {
+    transform: translateY(-15px) rotate(45deg);
+    background-color: white;
+}
+
+#btn-menu.ativo .linha:nth-child(2) {
+    width: 0;
+    height: 4px;
+}
+
+#btn-menu.ativo {
+    border: 0px solid black;
+}
+
+/* Header fixo no topo */
+.container_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.33rem;
+    z-index: 1000;
+}
+
+.container_img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.container_img img {
+    height: 80%;
+    width: 70%;
+}
+
+.divisoria {
+    background-color: white;
+    height: 80%;
+    width: 0.15rem;
+}
+
+.nav {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.nav a:hover {
+    background-color: rgb(214, 43, 43);
+}
+
+/* Container de login centralizado */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 8rem; /* Espaço para o header */
+}
+
+.header .logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    color: #cc0000; /* Cor tradicional do SENAI */
+    font-size: 1.5em;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    color: #333333;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #cc0000; /* Cor do SENAI */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #b80000;
+}
+
+.links {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.links a {
+    color: #cc0000; 
+    text-decoration: none;
+    margin: 5px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
