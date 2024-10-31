@@ -242,8 +242,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120rem;
+    height: 135rem;
     gap: 2rem;
+    justify-content: center;
 }
 
 .divisao_dicas {
