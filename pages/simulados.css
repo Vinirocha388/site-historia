@@ -1,3 +1,5 @@
+/* Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Padrões */
@@ -57,7 +59,6 @@
     color: #ffffff;
     font-size: 18px;
     text-decoration: none;
-    text-align: justify;
 }
 
 #btn-menu {
@@ -70,7 +71,6 @@
     right: 30px;
     top: 20px;
     cursor: pointer;
-
 }
 
 .linha {
@@ -156,10 +156,6 @@
     font-size: 20px;
 }
 
-.container_header .nav a {  
-    color:white
-}
-
 .nav a:hover {
     background-color: var(--vermelho-claro);
 }
@@ -180,39 +176,7 @@
 
 
 
-
-
-.simulado {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border: 1px solid #d31e27;
-  margin-bottom: 10px;
-  width: 97%;
-  margin-left: 30px;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.simulado:hover {
-  background-color: #f5f5f5;
-}
-
-.foto-inicio {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.foto-inicio img {
-  width: 50%;
-  height: 100%;
-  border-radius: 15px;
-  margin: 30px;
-}/* Footer */
+/* Footer */
 
 .footer-text {
   background-color: #9a1915;
