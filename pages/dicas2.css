@@ -23,7 +23,6 @@
 }
 
 /* Menu */
-
 .menu-materias ul {
     background-color: var(--vermelho);
     backdrop-filter: blur(10px);
@@ -69,7 +68,7 @@
     border-radius: 10px;
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 10px;
     cursor: pointer;
 }
 
@@ -309,7 +308,7 @@ main {
     width: 20%;
     display: inline-block;
     text-align: center;
-    padding: 30px 0 20px 0;
+    padding: 20px 0 20px 0;
     margin-left: 25%;
   }
   
@@ -339,7 +338,6 @@ main {
   
   .footer .icones img {
     display: inline-block;
-    margin-left: 25px;;
   }
   
   .icones {
@@ -352,8 +350,6 @@ main {
     background-color: #9a1915;
     color: white;
   }
-  
-
   
   .img {
     width: 25%;
@@ -378,11 +374,15 @@ main {
   margin-left: -135px;
  }
 
-/* Responsividade */
+/* Responsividade Telas Grandes */
 
 @media (min-width: 769px) and (max-width: 1024px) {
     
     /* Menu */
+    .menu-materias ul {
+        top: 64px;
+        width: 18%;
+    }
     #btn-menu {
         top: 10px;
         width: 90px;
@@ -451,5 +451,35 @@ main {
         width: 50%;
         height: 90%;
     }
+
+    /* Footer */
+    .footer {
+        margin-top: 10px;
+    }
+    .footer .enderecos {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        height: 4.3rem;
+    }
+    .footer .icones {
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .senai, .sesi {
+        width: 40%;
+        height: 90%;
+        padding: 10px 0 10px 0;
+        margin-left: 0;
+    }
+    .senai h3, .sesi h3 {
+        text-align: center;
+        font-size: 14px;
+    }
+    .senai p, .sesi p {
+        text-align: center;
+        font-size: 12px;
+    }
 }
- 
