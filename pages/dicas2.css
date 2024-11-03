@@ -68,7 +68,7 @@
     border-radius: 10px;
     position: absolute;
     right: 30px;
-    top: 10px;
+    top: 23px;
     cursor: pointer;
 }
 
@@ -183,7 +183,7 @@ main {
 
 .banner {
     width: 100%;
-    height: 46rem;
+    height: 50rem;
 }
 
 .banner img {
@@ -486,7 +486,7 @@ main {
 
 /* Responsividade Telas Médias */
 
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
     /* Menu */
     #btn-menu {
         top: 2px;
