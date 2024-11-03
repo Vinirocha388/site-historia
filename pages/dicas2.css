@@ -520,4 +520,91 @@ main {
     .nav a {
         font-size: 12px;
     }
+
+    /* Banner */
+    .banner {
+        height: 20rem;
+    }
+
+    /* Navegação */
+    .navegacao {
+        height: 3rem;
+    }
+    .links_navegacao {
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+    .navegacao a {
+        padding: 3px 5px;
+    }
+    .navegacao li {
+        font-size: 12px;
+    }
+
+    /* Conteúdo */
+    .conteudo {
+        height: 304rem;
+        gap: 0.8rem;
+    }
+    .divisao_dicas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dica1, .dica2 {
+        width: 90%;
+        height: 25rem;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    .informacao {
+        width: 100%;
+        height: 50%;
+    }
+    .informacao h3 {
+        font-size: 16px;
+    }
+    .informacao p {
+        font-size: 14px;
+    }
+    .imagem {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .imagem img {
+        width: 80%;
+        height: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 30px;
+    }
+    .footer .enderecos {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        height: 4.3rem;
+    }
+    .footer .icones {
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .senai, .sesi {
+        width: 40%;
+        height: 90%;
+        padding: 10px 0 10px 0;
+        margin-left: 0;
+    }
+    .senai h3, .sesi h3 {
+        text-align: center;
+        font-size: 12px;
+    }
+    .senai p, .sesi p {
+        text-align: center;
+        font-size: 10px;
+    }
 }
