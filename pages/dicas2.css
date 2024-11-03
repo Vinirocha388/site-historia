@@ -24,8 +24,6 @@
 
 /* Menu */
 
-/* Menu */
-
 .menu-materias ul {
     background-color: var(--vermelho);
     backdrop-filter: blur(10px);
@@ -380,4 +378,55 @@ main {
   margin-left: -135px;
  }
 
+/* Responsividade */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    /* Menu */
+    #btn-menu {
+        top: 10px;
+        width: 90px;
+    }
+    .linha {
+        width: 26px;
+        height: 2px;
+    }
+    
+    /* Header */
+    .container_header {
+        height: 4rem;
+    }
+    .container_img {
+        width: 30%;
+    }
+    .container_img img {
+        width: 70%;
+        height: 75%;
+        padding: 0 20px;
+    }
+    .divisoria {
+        width: 0.14rem;
+    }
+    .nav {
+        width: 45%;
+        gap: 4rem;
+    }
+    .nav a {
+        font-size: 14px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 28rem;
+    }
+
+    /* Navegação */
+    .navegacao {
+        height: 4rem;
+    }
+    .links_navegacao {
+        padding: 1rem 0;
+        gap: 0.8rem;
+    }
+}
  
