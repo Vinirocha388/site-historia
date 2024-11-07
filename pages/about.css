@@ -428,4 +428,40 @@ hr {
         width: 100%;
         text-align: center;
     }
+    .container_menu {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+    .article-title {
+        flex-direction: column;
+    }
+    .article-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer{
+        padding: 20px;
+    }
+
+    .senai, .sesi {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .icones {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .icones img {
+        margin: 10px 0;
+    }
 }
