@@ -175,11 +175,16 @@ body {
 /* quadrinho */
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .content{
+  background: #2c2c2c38;
     color: rgb(0, 0, 0);
-
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -209,8 +214,6 @@ main {
     justify-content: center;
     align-items: center;
     width: 50%;
-
-
 }
 
 .texto{
@@ -379,6 +382,7 @@ nav ul li a:hover {
     gap: 40px;
     padding: 20px 0;
     background-color: var(--vermelho_escuro);
+}
 
 .senai h3 {
   text-align: left;
@@ -537,6 +541,7 @@ margin-left: -135px;
 
 
 @media (max-width: 480px) {
+  
   .container_header {
     padding: 0.5rem;
     gap: 0.5rem;
