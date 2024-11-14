@@ -1,4 +1,4 @@
-# Portal Educativo para Ensino Médio
+# Portal Educativo para Ensino Médio - **História**
 
 ## Visão Geral do Projeto
 Este projeto consiste no desenvolvimento de um portal online que centraliza conteúdos educativos voltados para diversas matérias do Ensino Médio. O objetivo é fornecer uma plataforma acessível e intuitiva onde os alunos possam acessar materiais interativos e ricos em informações, facilitando o aprendizado e promovendo um ambiente de estudos eficaz.
