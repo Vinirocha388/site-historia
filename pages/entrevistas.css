@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
 
 :root {
     --vermelho: #cc0000;
@@ -11,13 +14,11 @@
     --fonte_texto: "Montserrat", sans-serif;
 }
 
-/* Configurações Gerais */
-
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fonte);
+    padding: 20px;
 }
 
 /* Menu */
@@ -137,7 +138,6 @@
     height: 80%;
     width: 0.15rem;
     display: flex;
-    
 }
 
 .nav {
@@ -177,110 +177,144 @@
     height: 50%;
 }
 
-
-.simulado {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border: 1px solid #d31e27;
-  margin-bottom: 10px;
-  width: 97%;
-  margin-left: 30px;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+h2 {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.simulado:hover {
-  background-color: #f5f5f5;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.foto-inicio {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
 }
 
-.foto-inicio img {
-  width: 50%;
-  height: 100%;
-  border-radius: 15px;
-  margin: 30px;
-}/* Footer */
+.video {
+    flex: 1 1 calc(23% - 20px);
+    background-color: var(--branco);
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-title {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-height: 200px; 
+}
+
+/* Footer */
 
 .footer-text {
-  background-color: #9a1915;
-  color: white;
+    background-color: #9a1915;
+    color: white;
+  
+  }
+  
+  .header-nav .nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 6px;
+    color: #ffffffff;
+  }
+  
+  .footer {
+    background-color: #9a1915;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  .footer .icones {
+    background-color: #e30613;
+  }
+  
+  .senai {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    margin-left: 25%;
+  }
+  
+  .senai h3 {
+    text-align: left;
+  }
+  
+  .senai p {
+    text-align: left;
+  }
+  
+  .sesi {
+    width: 20%;
+    display: inline-block;
+    margin-left: 3%;
+    text-align: center;
+    padding: 0 0 20px 0px;
+  }
+  
+  .sesi h3 {
+    text-align: left;
+  }
+  
+  .sesi p {
+    text-align: left;
+  }
+  
+  .footer .icones img {
+    display: inline-block;
+    margin-left: 25px;;
+  }
+  
+  .icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-text {
+    background-color: #9a1915;
+    color: white;
+  }
+  
 
-}
+  
+  .img {
+    width: 25%;
+    margin-bottom: 300px;
+    align-items: center;
+  }
 
-.header-nav .nav-link {
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-  margin: 6px;
-  color: #ffffffff;
-}
-
-.footer {
-  background-color: #9a1915;
-  color: white;
-  margin-top: 50px;
-}
-
-.footer .icones {
-  background-color: #e30613;
-}
-
-.senai {
-  width: 20%;
-  display: inline-block;
-  text-align: center;
-  padding: 30px 0 20px 0;
-  margin-left: 25%;
-}
-
-.senai h3 {
-  text-align: left;
-}
-
-.senai p {
-  text-align: left;
-}
-
-.sesi {
-  width: 20%;
-  display: inline-block;
-  margin-left: 3%;
-  text-align: center;
-  padding: 0 0 20px 0px;
-}
-
-.sesi h3 {
-  text-align: left;
-}
-
-.sesi p {
-  text-align: left;
-}
-
-.footer .icones img {
-  display: inline-block;
-  margin-left: 25px;;
+  .team{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 50px 0px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .icones {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-.footer-text {
-  background-color: #9a1915;
-  color: white;
-}
-
-
-
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  margin-left: -135px;
+ }

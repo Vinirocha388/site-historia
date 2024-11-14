@@ -288,16 +288,56 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 30px;
-
+  margin-left: 5px;
 }
 
 .imgS {
   border-radius: 3%;
+  width: 50rem;
+  height: 45rem;
+  display: flex;
+  margin-left: -20px; /* Adiciona esta linha para mover a imagem para a direita */
 }
 
+.imgfoto {
+  width: 10rem;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.imgfoto1 {
+  border-radius: 3%;
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  margin-top: -1970px;
+  margin-left: 2120px;
+  
+  
+}
+
+
+.imgestudando {
+  border-radius: 3%;
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  margin-top: -575px; /* Ajusta esta linha para mover a imagem para cima */
+  margin-left: 460px;
+
+}
+
+.imgs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Navegação */
 
