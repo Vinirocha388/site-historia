@@ -204,7 +204,7 @@ main {
 
 .navegacao a {
     background-color: var(--cinza);
-    padding: 4px 30px;
+    padding: 2px 30px;
     border-radius: 18px;
     text-decoration: none;
 }
