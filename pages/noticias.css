@@ -288,16 +288,65 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 30px;
-
+  margin-left: 5px;
 }
 
 .imgS {
   border-radius: 3%;
+  width: 60rem;
+  height: 40rem;
+
 }
 
+.imgfoto {
+  width: 10rem;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.imgfoto1 {
+  border-radius: 3%;
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  margin-bottom: 320px;
+  margin-right: -410px;
+  
+  
+}
+
+.imgestudantes {
+  border-radius: 3%;
+  width: 50rem;
+  height: 20rem;
+  margin-bottom: 0px;
+  margin-right: 600px;
+
+
+}
+
+.imgestudando {
+  border-radius: 3%;
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  margin-bottom: 320px;
+  margin-top: 150px; /* Adiciona esta linha para empurrar a imagem para baixo */
+}
+
+
+
+.imgs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Navegação */
 
