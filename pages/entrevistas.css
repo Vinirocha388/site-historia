@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: var(--fonte);
 }
+/* agora vai 2.0 */
 
 :root {
     --vermelho: #cc0000;
