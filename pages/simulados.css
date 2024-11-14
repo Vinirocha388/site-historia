@@ -153,6 +153,16 @@
     background-color: var(--vermelho);
 }
 
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    padding: 2rem 0;
+}
+
+a {
+  color: black
+}
 /* Simulados */
 .simulado {
     display: flex;
