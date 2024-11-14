@@ -153,6 +153,10 @@
     font-size: 20px;
 }
 
+.container_header .nav a {  
+    color:white
+}
+
 .nav a:hover {
     background-color: var(--vermelho-claro);
 }
@@ -186,10 +190,6 @@
     background-color: white;
 }
 
-
-
-
-
 /* Estilos Gerais */
 body {
     font-family: 'Arial', sans-serif;
@@ -201,10 +201,7 @@ body {
 
 h2, h3 {
     color: black;
-}
-
-strong {
-    color: #cc0000;
+    text-align: justify;
 }
 
 hr {
@@ -220,6 +217,9 @@ hr {
     padding: 20px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    border-radius: 3%;
+    margin-bottom: 2rem;
 }
 
 .article {
@@ -230,45 +230,64 @@ hr {
 .article-title {
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .article-img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    margin: 20px 0;
-    display: block;
+    display: flex;
+    gap: 30px;
+    align-items: center ;
 }
+
+.article-img img {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
 
 .article-text p {
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Estilo para a seção de integrantes */
-.descricao-integrantes {
-    max-width: 1200px;
-    margin: 0 auto;
+/*cards*/
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
+}
+
+.card {
     background-color: white;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    width: 22rem;
+    text-align: center;
+    padding: 15px;
+    }
 
-.descricao-integrantes img {
-    width: 150px;
-    height: auto;
+.card img {
     border-radius: 50%;
-    margin: 10px 0;
+    height: 18rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    text-align: center;
+    object-fit: cover;
 }
 
-.descricao-integrantes h3 {
-    margin: 10px 0 5px;
-    font-size: 20px;
+.card h2 {
+    margin: 1rem;
+
 }
 
-.descricao-integrantes p {
-    font-size: 16px;
-    color: #555;
+.card p {
+    font-size: 0.95em;
+    color: black;
 }
 
 /* Footer */
@@ -307,6 +326,7 @@ hr {
   
   .senai h3 {
     text-align: left;
+    color: white;
   }
   
   .senai p {
@@ -323,6 +343,7 @@ hr {
   
   .sesi h3 {
     text-align: left;
+    color: white ;
   }
   
   .sesi p {
@@ -344,8 +365,6 @@ hr {
     background-color: #9a1915;
     color: white;
   }
-  
-
   
   .img {
     width: 25%;
@@ -369,3 +388,73 @@ hr {
   align-items: center;
   margin-left: -135px;
  }
+
+@media (max-width : 768px) {
+    .menu-materias ul {
+        left: 0;
+        width: 100%;
+    }
+    .menu-icon {
+        display: flex;
+    }
+
+    #btn-menu {
+        right: 15px;
+    }
+
+    .container_header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .container_img {
+        width: 100%;
+    }
+    .container_img img {
+        width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .container_menu {
+        width: auto;
+    }
+
+
+    .main-content {
+        padding: 15px;
+    }
+    .article-title {
+        flex-direction: column;
+    }
+    .article-img img {
+        width: 100%;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    .senai, .sesi {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .icones {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .icones img {
+        margin: 10px 0;
+    }
+}

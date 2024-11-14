@@ -59,6 +59,7 @@
     color: #ffffff;
     font-size: 18px;
     text-decoration: none;
+    text-align: justify;
 }
 
 #btn-menu {
@@ -71,6 +72,7 @@
     right: 30px;
     top: 20px;
     cursor: pointer;
+
 }
 
 .linha {
@@ -153,6 +155,10 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+.container_header .nav a {  
+    color:white
 }
 
 .nav a:hover {

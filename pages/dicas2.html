@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dicas2.css">
     <title>13 dicas para melhorar seus estudos</title>
 </head>
+
 <body>
+
+    <!-------------Menu------------->
+
+    <button onclick="animar(), animarMenu()" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+    </button>
+
+    <script>
+        function animar() {
+            const btn = document.getElementById('btn-menu');
+            btn.classList.toggle('ativo');
+        }
+    </script>
+    <script>
+        function animarMenu() {
+            const menu = document.getElementById('menu-materias');
+            menu.classList.toggle('abrir');
+            menu.addEventListener('click', animarMenu);
+        }
+    </script>
+    <header>
+        <nav class="menu-materias" id="menu-materias">
+            <ul>
+                <li><a href="portugues.html">Português</a></li>
+                <li><a href="matematica.html">Matemática</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="geografia.html">Geografia</a></li>
+                <li><a href="biologia.html">Biologia</a></li>
+                <li><a href="fisica.html">Física</a></li>
+                <li><a href="quimica.html">Química</a></li>
+                <li><a href="artes.html">Artes</a></li>
+                <li><a href="filosofia.html">Filosofia</a></li>
+                <li><a href="sociologia.html">Sociologia</a></li>
+                <li><a href="edFisica.html">Ed. Física</a></li>
+                <li><a href="ingles.html">Inglês</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-------------Header------------->
 
     <header class="container_header">
@@ -17,25 +60,80 @@
         <div class="nav">
             <a href="../index.html"><strong>Home</strong></a>
             <a href="/pages/about.html"><strong>Sobre</strong></a>
+            <a href="/pages/cadastro.html"><strong>Cadastre-se</strong></a>
         </div>
     </header>
 
-    <!-------------Conteúdo------------>
-    <!-- teste -->
+    <!-------------Banner e navegação------------>
 
     <main>
 
         <section class="banner">
-            <img src="image/home/banner.jpg" alt="">
+            <img src="../image/dicas2/mulher_estudando.jpg" alt="">
         </section>
 
         <section class="navegacao">
-            <a href="/pages/carreiras.html"><li>CARREIRAS</li></a>
-            <a href="/pages/simulados.html"><li>SIMULADOS</li></a>
-            <a href="/pages/dicas.html"><li>DICAS</li></a>
-            <a href="/pages/entrevistas.html"><li>ENTREVISTAS</li></a>
-            <a href="/pages/noticias.html"><li>NOTÍCIAS</li></a>
+            <nav class="links_navegacao">
+                <a href="/pages/carreiras.html">
+                    <li>CARREIRAS</li>
+                </a>
+                <a href="/pages/simulados.html">
+                    <li>SIMULADOS</li>
+                </a>
+                <a href="/pages/dicas.html">
+                    <li>DICAS</li>
+                </a>
+                <a href="/pages/entrevistas.html">
+                    <li>ENTREVISTAS</li>
+                </a>
+                <a href="/pages/noticias.html">
+                    <li>NOTÍCIAS</li>
+                </a>
+            </nav>
         </section>
         <div class="divisoria_nav"></div>
+
+    </main>
+
+    <!-------------Conteúdo------------->
+
+    <main class="conteudo">
+
+        <section class="divisao_dicas">
+
+            <div class="dica1">
+                <div class="informacao">
+                    <h3>Escolha um local de estudo limpo, organizado e silencioso</h3>
+                    <p>Ao variar os temas e disciplinas durante suas sessões de estudo, você estimula diferentes áreas
+                        do cérebro e evita o esgotamento mental. Focar por muito tempo em uma única matéria pode levar à
+                        exaustão e diminuir a produtividade. Alternar os conteúdos permite que você continue aprendendo
+                        com mais disposição e facilita a associação de informações de diferentes temas, tornando o
+                        aprendizado mais dinâmico e eficiente.</p>
+                </div>
+                <div class="imagem">
+                    <img src="../image/dicas2/mesa-limpa.jpg" alt="Um escritório limpo e organizado">
+                </div>
+            </div>
+
+            <div class="dica2">
+                <div class="informacao">
+                    <h3>Mantenha qualquer distração longe</h3>
+                    <p>Durante o estudo, a concentração é essencial. É importante afastar todas as possíveis fontes de
+                        distração, como smartphones, redes sociais, televisão e conversas paralelas. Cada vez que sua
+                        atenção é desviada, o cérebro precisa de tempo para se reconcentrar, o que compromete a
+                        eficiência. Criar um ambiente focado, sem interferências, aumenta significativamente o
+                        rendimento e a qualidade do tempo dedicado aos estudos.</p>
+                </div>
+                <div class="imagem">
+                    <img src="../image/dicas2/pessoas_celular.jpg" alt="Um escritório limpo e organizado">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
 </body>
+
 </html>
