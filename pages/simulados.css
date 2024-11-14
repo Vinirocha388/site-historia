@@ -1,3 +1,6 @@
+
+/* Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Padrões */
@@ -266,15 +269,7 @@
   color: #ffffffff;
 }
 
-.footer {
-  background-color: #9a1915;
-  color: white;
-  margin-top: 50px;
-}
 
-.footer .icones {
-  background-color: #e30613;
-}
 
 .senai {
   width: 20%;
@@ -316,13 +311,4 @@
 .icones {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.footer-text {
-  background-color: #9a1915;
-  color: white;
-}
-
-
 
