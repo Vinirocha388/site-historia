@@ -195,6 +195,10 @@ h1 {
     padding-left: 0; 
 } 
 
+.periodo .list {
+    list-style:  disc;
+}
+
 .periodo ul li {
      margin-bottom: 5px; 
      font-size: 1em; 
@@ -207,9 +211,7 @@ h1 {
 .periodo img { 
     width: 100%; 
 } 
-
 }
-
 
 /* Footer */
 
