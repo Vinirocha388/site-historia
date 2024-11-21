@@ -10,7 +10,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('/image/dicas/fundo.png'); /* Use a imagem de fundo fornecida */
+  background-image: url('/image/dicas/fundo.png');
+  /* Use a imagem de fundo fornecida */
   background-size: cover;
   background-position: center;
   background-image: url(../image/dicas/fundo.png);
@@ -91,13 +92,8 @@ body {
   height: 50%;
 }
 
-
-
-
-
-
 /* Estilização menu */
-.menu-materias ul{
+.menu-materias ul {
   background-color: #ff0000;
   backdrop-filter: blur(10px);
   position: absolute;
@@ -113,16 +109,15 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* quadrinho */
 
-main {
-}
+main {}
 
-.content{
+.content {
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -135,7 +130,7 @@ main {
 }
 
 
-.fileira{
+.fileira {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -146,7 +141,7 @@ main {
 }
 
 
-.card{
+.card {
   min-width: 30%;
   max-width: 30%;
   display: flex;
@@ -162,7 +157,7 @@ main {
 }
 
 
-.texto{
+.texto {
   text-align: center;
   background: rgba(255, 255, 255, 0.59);
   border-radius: 10px;
@@ -189,100 +184,101 @@ main {
 /* Footer */
 
 .footer {
-    background-color: var(--vermelho);
-    /* Vermelho do SENAI */
-    padding: 20px 0;
-    color: white;
-    text-align: center;
+  background-color: var(--vermelho);
+  /* Vermelho do SENAI */
+  padding: 20px 0;
+  color: white;
+  text-align: center;
 }
 
 /* Footer */
 
 .footer-text {
-background-color: #9a1915;
-color: white;
+  background-color: #9a1915;
+  color: white;
 
 
 }
 
 
 .header-nav .nav-link {
-text-decoration: none;
-font-weight: bold;
-transition: color 0.3s;
-margin: 6px;
-color: #ffffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  margin: 6px;
+  color: #ffffffff;
 }
 
 
 
 
 .footer {
-background-color: #9a1915;
-color: white;
-margin-top: 50px;
+  background-color: #9a1915;
+  color: white;
+  margin-top: 50px;
 }
 
 
 .footer .icones {
-background-color: #e30613;
+  background-color: #e30613;
 }
 
 
 .senai {
-width: 20%;
-display: inline-block;
-text-align: center;
-padding: 30px 0 20px 0;
-margin-left: 25%;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  padding: 30px 0 20px 0;
+  margin-left: 25%;
 }
 
 
 .senai h3 {
-text-align: left;
+  text-align: left;
 }
 
 
 .senai p {
-text-align: left;
+  text-align: left;
 }
 
 
 .sesi {
-width: 20%;
-display: inline-block;
-margin-left: 3%;
-text-align: center;
-padding: 0 0 20px 0px;
+  width: 20%;
+  display: inline-block;
+  margin-left: 3%;
+  text-align: center;
+  padding: 0 0 20px 0px;
 }
 
 
 .sesi h3 {
-text-align: left;
+  text-align: left;
 }
 
 
 .sesi p {
-text-align: left;
+  text-align: left;
 }
 
 
 .footer .icones img {
-display: inline-block;
-margin-left: 25px;;
+  display: inline-block;
+  margin-left: 25px;
+  ;
 }
 
 
 .icones {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .footer-text {
-background-color: #9a1915;
-color: white;
+  background-color: #9a1915;
+  color: white;
 }
 
 
@@ -291,26 +287,26 @@ color: white;
 
 
 .img {
-width: 25%;
-margin-bottom: 300px;
-align-items: center;
+  width: 25%;
+  margin-bottom: 300px;
+  align-items: center;
 }
 
 
-.team{
-display: flex;
-justify-content: space-around;
-margin: 0px 0px 50px 0px;
-margin-left: 100px;
-margin-right: 100px;
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 0px 50px 0px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 
 .icones {
-display: flex;
-justify-content: center;
-gap: 10px;
-padding: 10px 0;
-align-items: center;
-margin-left: -135px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  margin-left: -135px;
 }
