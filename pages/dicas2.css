@@ -486,7 +486,7 @@ main {
 }
 
 /* Responsividade Telas Médias */
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
     /* Menu */
     #btn-menu {
         top: 2px;
