@@ -66,15 +66,13 @@
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;
+  font-family: var(--fonte_texto);
 }
 
 .nav a:hover {
   background-color: var(--vermelho_escuro);
 }
 
-.strong {
-  font-family: var(--fonte_texto);
-}
 
 /* Navegação */
 .navegacao {
@@ -297,23 +295,39 @@ h1 {
 
 /* Discord */
 
+.comunidade{
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
 .comunidade h1 {
     font-size: 40px;
     margin: 20px;
 }
 
+.comu-disc{
+  text-align: center;
+  margin: 50px;
+}
 
-.imagem_comunidade .link-dics{
-  position: absolute;
-    top: 75%; /* Ajusta a posição do texto verticalmente */
-    left: 50%; /* Ajusta a posição do texto horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o texto */
-    color: white; /* Cor do texto */
-    font-size: 2em; /* Tamanho do texto */
-    background-color: rgba(154, 154, 154, 0.5); /* Fundo semitransparente */
-    padding: 10px;
-    border-radius: 5px; /* Deixe as bordas arredondadas */
+.comu-text{
+  text-align: center;
+  margin: 10px;
+}
+
+.imagem_comunidade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem_comunidade img {
+ width: 30%;
+ height: 50%;
+ cursor: pointer;
 }
 
 /* Footer */
