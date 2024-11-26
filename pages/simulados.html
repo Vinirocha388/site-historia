@@ -13,30 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/image/senai.ico">
 </head>
 <body>
-    <!-- Menu -->
-    <button onclick="animar(), animarMenu()" id="btn-menu">
-        <span class="linha"></span>
-        <span class="linha"></span>
-        <span class="linha"></span>
-    </button>
 
-    <script>
-        function animar() {
-            const btn = document.getElementById('btn-menu');
-            btn.classList.toggle('ativo');
-        }
-
-        function animarMenu() {
-            const menu = document.getElementById('menu-materias');
-            menu.classList.toggle('abrir');
-            menu.addEventListener('click', animarMenu);
-        }
-
-        // Função para redirecionar ao clicar nas divs
-        function redirectTo(url) {
-            window.location.href = url;
-        }
-    </script>
 
     <header class="container_header">
         <div class="container_img">
