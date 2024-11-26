@@ -245,6 +245,13 @@ h1 {
   align-content: center;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-simulados img {
@@ -279,21 +286,12 @@ h1 {
 
 /* Discord */
 
-.comunidade{
-  background-color: #fff;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border-radius: 5px;
-  margin: 30px;
+
+.comunidade h1 {
+    font-size: 40px;
+    margin: 20px;
 }
 
-
-.imagem_comunidade {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  display: inline-block;
-}
 
 .imagem_comunidade .link-dics{
   position: absolute;
