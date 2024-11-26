@@ -66,15 +66,13 @@
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;
+  font-family: var(--fonte_texto);
 }
 
 .nav a:hover {
   background-color: var(--vermelho_escuro);
 }
 
-.strong {
-  font-family: var(--fonte_texto);
-}
 
 /* Navegação */
 .navegacao {
