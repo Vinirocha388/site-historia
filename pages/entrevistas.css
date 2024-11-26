@@ -324,3 +324,46 @@ video {
   align-items: center;
   margin-left: -135px;
  }
+
+
+/* Responsividade Telas Grandes */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    /* Menu */
+    .menu-materias ul {
+        top: 64px;
+        width: 18%;
+    }
+    #btn-menu {
+        top: 10px;
+        width: 90px;
+    }
+    .linha {
+        width: 26px;
+        height: 2px;
+    }
+    
+    /* Header */
+    .container_header {
+        height: 4rem;
+    }
+    .container_img {
+        width: 30%;
+    }
+    .container_img img {
+        width: 70%;
+        height: 75%;
+        padding: 0 20px;
+    }
+    .divisoria {
+        width: 0.14rem;
+    }
+    .nav {
+        width: 45%;
+        gap: 4rem;
+    }
+    .nav a {
+        font-size: 14px;
+    }
+
+}
