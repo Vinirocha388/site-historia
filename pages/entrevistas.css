@@ -194,6 +194,8 @@ h2 {
     gap: 30px;
     margin-top: 20px;
     padding: 0 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .video {
@@ -360,6 +362,19 @@ video {
         font-size: 14px;
     }
 
+    /* Conteúdo */
+    .container {
+        height: 80rem;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 30px;
+    }
+
     /* Footer */
     .footer {
         margin-top: 10px;
@@ -428,7 +443,29 @@ video {
         font-size: 12px;
     }
 
+    /* Conteúdo */
+    .container {
+        height: 165rem;
+    }
+    .video-container{
+        width: 100%;
+        height: 18rem;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 30px;
+    }
+    .video{
+        width: 80%;
+        height: 18rem;
+    }
+
     /* Footer */
+
     .footer {
         margin-top: 30px;
     }
