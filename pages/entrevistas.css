@@ -1,9 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fonte);
-}
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Padrões */
 
 :root {
     --vermelho: #cc0000;
@@ -12,6 +11,15 @@
     --preto: #000;
     --branco: #ffffff;
     --fonte_texto: "Montserrat", sans-serif;
+}
+
+/* Configurações Gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
 }
 
 body {
@@ -58,7 +66,6 @@ body {
     color: #ffffff;
     font-size: 18px;
     text-decoration: none;
-    text-align: justify;
 }
 
 #btn-menu {
@@ -71,7 +78,6 @@ body {
     right: 30px;
     top: 20px;
     cursor: pointer;
-
 }
 
 .linha {
@@ -156,10 +162,6 @@ body {
     font-size: 20px;
 }
 
-.container_header .nav a {  
-    color:white
-}
-
 .nav a:hover {
     background-color: var(--vermelho-claro);
 }
@@ -176,6 +178,10 @@ body {
     width: 30%;
     height: 50%;
 }
+
+
+
+
 
 h2 {
     text-align: center;
