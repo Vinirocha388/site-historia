@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="dicas.css">
     <link rel="icon" type="image/x-icon" href="/image/senai.ico">
 </head>
+
 <body>
-<!-----teste-->
+    <!-----teste-->
 
 
     <header class="container_header">
@@ -20,7 +22,7 @@
             <a href="../index.html"><strong>Home</strong></a>
             <a href="about.html"><strong>Sobre</strong></a>
             <a href="#"><strong>Cadastre-se</strong></a>
-           
+
         </div>
     </header>
 
@@ -38,16 +40,16 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                    <img src="../image/image-removebg-preview (1).png" alt="Checklist enem 2024">
+                        <img src="../image/image-removebg-preview (1).png" alt="Checklist enem 2024">
                     </div>
                     <div class="texto">
                         <a href="./dicasTres.html"><strong>Checklist enem 2024</strong></a>
                     </div>
                 </div>
-               
+
                 <div class="card">
                     <div class="image">
-                    <img src="../image/image-removebg-preview (1).png" alt="Quais conteúdos eu devo estudar?">
+                        <img src="../image/image-removebg-preview (1).png" alt="Quais conteúdos eu devo estudar?">
                     </div>
                     <div class="texto">
                         <a href="./dicasUm.html"><strong>Quais conteúdos eu devo estudar?</strong></a>
@@ -59,7 +61,7 @@
             <div class="fileira">
                 <div class="card">
                     <div class="image">
-                    <img src="../image/image-removebg-preview (1).png" alt="Organizador de estudos">
+                        <img src="../image/image-removebg-preview (1).png" alt="Organizador de estudos">
                     </div>
                     <div class="texto">
                         <a href="dicasQuatro.html"><strong>Organizador de estudos</strong></a>
@@ -67,56 +69,57 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                    <img src="../image/image-removebg-preview (1).png" alt="Planilha de estudos: Humanas">
+                        <img src="../image/image-removebg-preview (1).png" alt="Planilha de estudos: Humanas">
                     </div>
                     <div class="texto">
                         <a href="./dicasCinco.html"><strong>Planilha de estudos: Humanas</strong></a>
                     </div>
                 </div>
-               
+
                 <div class="card">
                     <div class="image">
-                    <img src="../image/image-removebg-preview (1).png" alt="Relatos de profissionais na área de humanas">
+                        <img src="../image/image-removebg-preview (1).png"
+                            alt="Relatos de profissionais na área de humanas">
                     </div>
                     <div class="texto">
                         <a href="./dicasSeis.html"><strong>Relatos de profissionais na área de humanas</strong></a>
                     </div>
                 </div>
             </div>
-           
+
         </section>
     </main>
 
 
 
 
-<!-------------Menu------------->
-<button onclick="animar(), animarMenu()" id="btn-menu">
-    <span class="linha"></span>
-    <span class="linha"></span>
-    <span class="linha"></span>
-</button>
+    <!-------------Menu------------->
+    <button onclick="animar(), animarMenu()" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+    </button>
 
 
-<script>
-    function animar(){
-        const btn = document.getElementById('btn-menu');
-        btn.classList.toggle('ativo');
-    }
-</script>
-<script>
-    function animarMenu(){
-        const menu = document.getElementById('menu-materias');
-        menu.classList.toggle('abrir');
-        menu.addEventListener('click', animarMenu);
-    }
-</script>
+    <script>
+        function animar() {
+            const btn = document.getElementById('btn-menu');
+            btn.classList.toggle('ativo');
+        }
+    </script>
+    <script>
+        function animarMenu() {
+            const menu = document.getElementById('menu-materias');
+            menu.classList.toggle('abrir');
+            menu.addEventListener('click', animarMenu);
+        }
+    </script>
 
 
-<header>
+    <header>
 
 
-    <nav class="menu-materias" id="menu-materias">
+        <nav class="menu-materias" id="menu-materias">
             <ul>
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="portugues.html">Português</a></li>
@@ -131,39 +134,45 @@
                 <li><a href="sociologia.html">Sociologia</a></li>
                 <li><a href="edFisica.html">Ed. Física</a></li>
                 <li><a href="ingles.html">Inglês</a></li>
-                </ul>
+            </ul>
         </nav>
 
 
-  <!-------------Footer------------->
-  <footer class="footer">
-    <div class="icones">
-      <a href="https://www.facebook.com/senaisp.valinhos?mibextid=ZbWKwL"><img src="../image/icons/facebook.png" alt="facebook" width=25px height=25px/></a>
-      <a href="https://www.instagram.com/senaivalinhos?igsh=MXRjcnppaTk3ZXFpaA=="><img src="../image/icons/instagram.png" alt="instagram" width=25px height=25px/></a>
-      <a href="https://api.whatsapp.com/send?phone=551133220050"><img src="../image/icons/whatsapp.png" alt="whatsapp" width=25px height=25px/></a>
-      <a href="https://youtube.com/@senaisaopaulo-escolasenaiv6966?si=uI1RtvEwX4h1qaFv"><img src="../image/icons/youtube.png" alt="youtube" width=25px height=25px/></a>
-      <a href="https://www.linkedin.com/school/senai-de-valinhos/"><img src="..//image/icons/linkedin.png" alt="linkedin" width=25px height=25px/></a>
-    </div>
-     
-    <div class="enderecos">
-      <div class="senai">
-          <h3>EDIFÍCIO REDE SENAI Valinhos</h3>
-          <p>
-            R. Artur Fernandes Querido, 55 - Vila Santo<br/>Antonio, Valinhos -
-            SP, 13270-530
-          </p>
-        </div>
-        <img src="..//image/icons/linha.png" alt="linha">
- 
-          <div class="sesi">
-              <h3>EDIFÍCIO REDE SESI Valinhos</h3>
-              <p>Rod. Flávio de Carvalho, 2787 - Jardim São<br/>Paulo, Valinhos - SP, 13273-450</p>
-          </div>
-    </div>
-  </footer>
- 
- 
+        <!-------------Footer------------->
+        <footer class="footer">
+            <div class="icones">
+                <a href="https://www.facebook.com/senaisp.valinhos?mibextid=ZbWKwL"><img
+                        src="../image/icons/facebook.png" alt="facebook" width=25px height=25px /></a>
+                <a href="https://www.instagram.com/senaivalinhos?igsh=MXRjcnppaTk3ZXFpaA=="><img
+                        src="../image/icons/instagram.png" alt="instagram" width=25px height=25px /></a>
+                <a href="https://api.whatsapp.com/send?phone=551133220050"><img src="../image/icons/whatsapp.png"
+                        alt="whatsapp" width=25px height=25px /></a>
+                <a href="https://youtube.com/@senaisaopaulo-escolasenaiv6966?si=uI1RtvEwX4h1qaFv"><img
+                        src="../image/icons/youtube.png" alt="youtube" width=25px height=25px /></a>
+                <a href="https://www.linkedin.com/school/senai-de-valinhos/"><img src="..//image/icons/linkedin.png"
+                        alt="linkedin" width=25px height=25px /></a>
+            </div>
+
+            <div class="enderecos">
+                <div class="senai">
+                    <h3>EDIFÍCIO REDE SENAI Valinhos</h3>
+                    <p>
+                        R. Artur Fernandes Querido, 55 - Vila Santo<br />Antonio, Valinhos -
+                        SP, 13270-530
+                    </p>
+                </div>
+                <img src="..//image/icons/linha.png" alt="linha">
+
+                <div class="sesi">
+                    <h3>EDIFÍCIO REDE SESI Valinhos</h3>
+                    <p>Rod. Flávio de Carvalho, 2787 - Jardim São<br />Paulo, Valinhos - SP, 13273-450</p>
+                </div>
+            </div>
+        </footer>
+
+
 
 
 </body>
+
 </html>
