@@ -7,6 +7,9 @@
     <title>Carreiras</title>
     <link rel="stylesheet" href="carreiras.css">
     <link rel="icon" type="image/x-icon" href="/image/senai.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -90,60 +93,35 @@
             </section>
 
         <br><br><br><br>
-        <section class="carreiras">
-            <div class="dropdown">
-                <div class="option" onclick="toggleDescription(this)">
-                    Pesquisador Acadêmico
-                    <span class="arrow">&#8250;</span>
-                    <div class="description">
-                        Pesquisadores acadêmicos dedicam-se ao estudo aprofundado em áreas específicas, produzindo artigos, relatórios e análises científicas.
-                    </div>
-                </div>
-                <div class="option" onclick="toggleDescription(this)">
-                    Arqueologia
-                    <span class="arrow">&#8250;</span>
-                    <div class="description">
-                        A arqueologia envolve o estudo de civilizações antigas através da escavação e análise de artefatos.
-                    </div>
-                </div>
-                <div class="option" onclick="toggleDescription(this)">
-                    Jornalismo e Comunicação
-                    <span class="arrow">&#8250;</span>
-                    <div class="description">
-                        Jornalistas e comunicadores trabalham na coleta, redação e transmissão de notícias e informações.
-                    </div>
-                </div>
-                <div class="option" onclick="toggleDescription(this)">
-                    Consultoria Histórica
-                    <span class="arrow">&#8250;</span>
-                    <div class="description">
-                        Consultores históricos ajudam a fornecer contextos e aconselhamento em projetos que exigem precisão histórica.
-                    </div>
-                </div>
-                <div class="option" onclick="toggleDescription(this)">
-                    Gestão de Patrimônio
-                    <span class="arrow">&#8250;</span>
-                    <div class="description">
-                        Gestores de patrimônio cultural são responsáveis por preservar, gerenciar e promover o patrimônio histórico e cultural.
-                    </div>
-                </div>
-            </div>
+        <section class="container-careers">
+            <h1 class="title">Carreiras a se seguir</h1>
+        
+            <details class="careers-item  animate__animated animate__backInLeft ">
+                <summary><strong> Pesquisador Acadêmico</strong></summary>
+                <p>Pesquisadores acadêmicos dedicam-se ao estudo aprofundado em áreas específicas, produzindo artigos, relatórios e análises científicas.</p>
+            </details>
+        
+            <details class="careers-item  animate__animated animate__backInLeft animate__delay-1s ">
+                <summary><strong>Arqueologia</strong></summary>
+                <p> A arqueologia envolve o estudo de civilizações antigas através da escavação e análise de artefatos.</p>
+            </details>
+        
+            <details class="careers-item  animate__animated animate__backInLeft animate__delay-2s">
+                <summary><strong>Jornalismo e Comunicação</strong></summary>
+                <p>Jornalistas e comunicadores trabalham na coleta, redação e transmissão de notícias e informações.</p>
+            </details>
+        
+            <details class="careers-item  animate__animated animate__backInLeft animate__delay-3s">
+                <summary><strong> Consultoria Histórica</strong></summary>
+                <p>Consultores históricos ajudam a fornecer contextos e aconselhamento em projetos que exigem precisão histórica.</p>
+            </details>
+
+            <details class="careers-item  animate__animated animate__backInLeft delay animate__delay-4s">
+                <summary><strong>Gestão de Patrimônio</strong></summary>
+                <p>Gestores de patrimônio cultural são responsáveis por preservar, gerenciar e promover o patrimônio histórico e cultural.</p>
+            </details>
+            
         </section>
-        
-        <script>
-            function toggleDescription(element) {
-                // Remove a classe 'active' de todos os elementos
-                const allOptions = document.querySelectorAll('.option');
-                allOptions.forEach(option => {
-                    if (option !== element) {
-                        option.classList.remove('active');
-                    }
-                });
-        
-                // Adiciona ou remove a classe 'active' no elemento clicado
-                element.classList.toggle('active');
-            }
-        </script>
     </main>
 
 

@@ -213,7 +213,7 @@ body {
 
 
 
-/* bory */
+/* body*/
 
 .banner {
     width: 100%;
@@ -306,56 +306,71 @@ body {
 }
 
 /* dropdown */
-.carreiras {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.dropdown {
+.container-title {
+    margin-left: 1rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    flex-direction: column;
+    line-height: 1.3;
 }
 
-.option {
-    background-color: #f1f1f1;
-    padding: 15px;
-    width: 45%;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    cursor: pointer;
+.container-title h1,
+.container-title h2 {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.container-title h1 {
+    color: var(--white-color);
+}
+
+.container-title h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.container-careers {
+    padding: 4.3rem;
+    text-align: center;
+    background-color:#dfdfdf;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s ease;
-    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2%;
 }
 
-.option:hover {
-    background-color: #e0e0e0;
+
+
+.container-careers .title {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 1rem;
 }
 
-.option .arrow {
-    font-size: 1.2em;
-    color: gray;
+.careers-item {
+    background-color:white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.description {
-    display: none;
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #555;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
+.careers-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.option.active .description {
-    display: block;
+.careers-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
+
+.cereers-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
+
 
 
 
