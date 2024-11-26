@@ -31,50 +31,51 @@
     padding: 0.5rem;
     background-color: var(--vermelho);
     height: 6rem;
-  }
-  
-  .container_img {
+}
+
+.container_img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
     height: 100%;
-  }
-  
-  .container_img img {
+}
+
+.container_img img {
     width: 70%;
     height: 80%;
-  }
-  
-  .divisoria {
+}
+
+.divisoria {
     background-color: var(--branco);
     width: 0.15rem;
     height: 80%;
-  }
-  
-  .nav {
+}
+
+.nav {
     display: flex;
     justify-content: center;
     gap: 5rem;
     width: 70%;
-  }
-  
-  .nav a {
+}
+
+.nav a {
     color: var(--branco);
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
-  }
-  
-  .nav a:hover {
+}
+
+.nav a:hover {
     background-color: var(--vermelho_escuro);
-  }
-  
-  .strong {
+}
+
+.strong {
     font-family: var(--fonte_texto);
-  }
+}
+
 /* Conteúdo */
 
 h2 {
@@ -121,7 +122,7 @@ h2 {
 video {
     width: 100%;
     height: auto;
-    max-height: 200px; 
+    max-height: 200px;
 }
 
 /* Footer */
@@ -129,84 +130,85 @@ video {
 .footer-text {
     background-color: #9a1915;
     color: white;
-  
-  }
-  
-  .header-nav .nav-link {
+
+}
+
+.header-nav .nav-link {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
     margin: 6px;
     color: #ffffffff;
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #9a1915;
     color: white;
     margin-top: 50px;
-  }
-  
-  .footer .icones {
+}
+
+.footer .icones {
     background-color: #e30613;
-  }
-  
-  .senai {
+}
+
+.senai {
     width: 20%;
     display: inline-block;
     text-align: center;
     padding: 30px 0 20px 0;
     margin-left: 25%;
-  }
-  
-  .senai h3 {
+}
+
+.senai h3 {
     text-align: left;
-  }
-  
-  .senai p {
+}
+
+.senai p {
     text-align: left;
-  }
-  
-  .sesi {
+}
+
+.sesi {
     width: 20%;
     display: inline-block;
     margin-left: 3%;
     text-align: center;
     padding: 0 0 20px 0px;
-  }
-  
-  .sesi h3 {
+}
+
+.sesi h3 {
     text-align: left;
-  }
-  
-  .sesi p {
+}
+
+.sesi p {
     text-align: left;
-  }
-  
-  .footer .icones img {
+}
+
+.footer .icones img {
     display: inline-block;
-    margin-left: 25px;;
-  }
-  
-  .icones {
+    margin-left: 25px;
+    ;
+}
+
+.icones {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     background-color: #9a1915;
     color: white;
-  }
-  
+}
 
-  
-  .img {
+
+
+.img {
     width: 25%;
     margin-bottom: 300px;
     align-items: center;
-  }
+}
 
-  .team{
+.team {
     display: flex;
     justify-content: space-around;
     margin: 0px 0px 50px 0px;
@@ -215,52 +217,59 @@ video {
 }
 
 .icones {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 0;
-  align-items: center;
-  margin-left: -135px;
- }
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    align-items: center;
+    margin-left: -135px;
+}
 
 
 /* Responsividade Telas Grandes */
 @media (min-width: 769px) and (max-width: 1024px) {
-    
+
     /* Menu */
     .menu-materias ul {
         top: 64px;
         width: 18%;
     }
+
     #btn-menu {
         top: 7px;
         width: 90px;
     }
+
     .linha {
         width: 26px;
         height: 2px;
         margin: 7px auto;
     }
-    
+
     /* Header */
     .container_header {
         height: 4rem;
     }
+
     .container_img {
         width: 30%;
     }
+
     .container_img img {
         width: 70%;
         height: 75%;
         padding: 0 20px;
     }
+
     .divisoria {
         width: 0.14rem;
     }
+
     .nav {
         width: 45%;
         gap: 4rem;
     }
+
     .nav a {
         font-size: 14px;
     }
@@ -269,6 +278,7 @@ video {
     .container {
         height: 80rem;
     }
+
     .parent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -282,29 +292,37 @@ video {
     .footer {
         margin-top: 10px;
     }
+
     .footer .enderecos {
         display: flex;
         justify-content: center;
         align-self: center;
         height: 4.3rem;
     }
+
     .footer .icones {
         height: 2rem;
         display: flex;
         justify-content: center;
         align-self: center;
     }
-    .senai, .sesi {
+
+    .senai,
+    .sesi {
         width: 40%;
         height: 90%;
         padding: 10px 0 10px 0;
         margin-left: 0;
     }
-    .senai h3, .sesi h3 {
+
+    .senai h3,
+    .sesi h3 {
         text-align: center;
         font-size: 14px;
     }
-    .senai p, .sesi p {
+
+    .senai p,
+    .sesi p {
         text-align: center;
         font-size: 12px;
     }
@@ -312,36 +330,46 @@ video {
 
 /* Responsividade Telas Laptops */
 @media (min-width: 300px) and (max-width: 768px) {
+
     /* Menu */
     #btn-menu {
         top: 0px;
     }
+
     .linha {
         width: 20px;
         height: 0.10rem;
         margin: 6px auto;
     }
+
     .linha:hover {
-        width: 20px;}
+        width: 20px;
+    }
+
     /* Header */
     .container_header {
         height: 3rem;
     }
+
     .container_img {
         width: 30%;
     }
+
     .container_img img {
         width: 100%;
         height: 79%;
         padding: 0 10px;
     }
+
     .divisoria {
         width: 0.1rem;
     }
+
     .nav {
         width: 57%;
         gap: 1.1rem;
     }
+
     .nav a {
         font-size: 12px;
     }
@@ -350,10 +378,12 @@ video {
     .container {
         height: 165rem;
     }
-    .video-container{
+
+    .video-container {
         width: 100%;
         height: 18rem;
     }
+
     .parent {
         display: grid;
         grid-template-columns: 1fr;
@@ -362,7 +392,8 @@ video {
         grid-row-gap: 0px;
         gap: 30px;
     }
-    .video{
+
+    .video {
         width: 80%;
         height: 18rem;
     }
@@ -372,29 +403,37 @@ video {
     .footer {
         margin-top: 30px;
     }
+
     .footer .enderecos {
         display: flex;
         justify-content: center;
         align-self: center;
         height: 4.3rem;
     }
+
     .footer .icones {
         height: 2rem;
         display: flex;
         justify-content: center;
         align-self: center;
     }
-    .senai, .sesi {
+
+    .senai,
+    .sesi {
         width: 40%;
         height: 90%;
         padding: 10px 0 10px 0;
         margin-left: 0;
     }
-    .senai h3, .sesi h3 {
+
+    .senai h3,
+    .sesi h3 {
         text-align: center;
         font-size: 12px;
     }
-    .senai p, .sesi p {
+
+    .senai p,
+    .sesi p {
         text-align: center;
         font-size: 10px;
     }

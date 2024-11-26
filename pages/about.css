@@ -29,50 +29,50 @@
     padding: 0.5rem;
     background-color: var(--vermelho);
     height: 6rem;
-  }
-  
-  .container_img {
+}
+
+.container_img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
     height: 100%;
-  }
-  
-  .container_img img {
+}
+
+.container_img img {
     width: 70%;
     height: 80%;
-  }
-  
-  .divisoria {
+}
+
+.divisoria {
     background-color: var(--branco);
     width: 0.15rem;
     height: 80%;
-  }
-  
-  .nav {
+}
+
+.nav {
     display: flex;
     justify-content: center;
     gap: 5rem;
     width: 70%;
-  }
-  
-  .nav a {
+}
+
+.nav a {
     color: var(--branco);
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
-  }
-  
-  .nav a:hover {
+}
+
+.nav a:hover {
     background-color: var(--vermelho_escuro);
-  }
-  
-  .strong {
+}
+
+.strong {
     font-family: var(--fonte_texto);
-  }
+}
 
 
 
