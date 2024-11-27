@@ -1,81 +1,102 @@
 /* Google Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Padrões */
-
+/* Variáveis de tema */
 :root {
-    --vermelho: #cc0000;
-    --vermelho_escuro: #9A1915;
-    --cinza: #D9D9D9;
-    --preto: #000;
-    --branco: #ffffff;
-    --fonte_texto: "Montserrat", sans-serif;
+  --vermelho: #cc0000;
+  --vermelho_escuro: #9A1915;
+  --cinza: #D9D9D9;
+  --preto: #000;
+  --branco: #ffffff;
+  --fonte_texto: 'Montserrat', sans-serif;
 }
 
-/* Configurações Gerais */
-
+/* Reset e estilo geral */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fonte);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte_texto);
 }
 
 /* Header */
-
 .container_header {
-    display: flex;
-    align-items: center;
-    gap: 0.33rem;
-    padding: 0.5rem;
-    background-color: var(--vermelho);
-    height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.33rem;
+  padding: 0.5rem;
+  background-color: var(--vermelho);
+  height: 6rem;
 }
 
 .container_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
 }
 
 .container_img img {
-    width: 70%;
-    height: 80%;
+  width: 70%;
+  height: 80%;
 }
 
 .divisoria {
-    background-color: var(--branco);
-    width: 0.15rem;
-    height: 80%;
+  background-color: var(--branco);
+  width: 0.15rem;
+  height: 80%;
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 70%;
 }
 
 .nav a {
-    color: var(--branco);
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
+  color: var(--branco);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .nav a:hover {
-    background-color: var(--vermelho_escuro);
+  background-color: var(--vermelho_escuro);
 }
 
-.strong {
-    font-family: var(--fonte_texto);
+/* Navegação */
+.navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 2rem 0;
 }
 
+.navegacao a {
+  background-color: var(--cinza);
+  padding: 4px 30px;
+  border-radius: 18px;
+  text-decoration: none;
+}
+
+.navegacao a:hover {
+  background-color: var(--vermelho);
+}
+
+.menu-navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 2rem 0;
+}
+
+a {
+  color: black
+}
 /* Main */
 
 main {

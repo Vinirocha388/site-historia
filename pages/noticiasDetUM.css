@@ -21,79 +21,79 @@
 
 /* Header */
 .container_header {
-    display: flex;
-    align-items: center;
-    gap: 0.33rem;
-    padding: 0.5rem;
-    background-color: var(--vermelho);
-    height: 6rem;
-  }
-  
-  .container_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-  }
-  
-  .container_img img {
-    width: 70%;
-    height: 80%;
-  }
-  
-  .divisoria {
-    background-color: var(--branco);
-    width: 0.15rem;
-    height: 80%;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    width: 70%;
-  }
-  
-  .nav a {
-    color: var(--branco);
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  .nav a:hover {
-    background-color: var(--vermelho_escuro);
-  }
-  
-  /* Navegação */
-  .navegacao {
-    display: flex;
-    justify-content: center;
-    gap: 6%;
-    padding: 2rem 0;
-  }
-  
-  .navegacao a {
-    background-color: var(--cinza);
-    padding: 4px 30px;
-    border-radius: 18px;
-    text-decoration: none;
-  }
-  
-  .navegacao a:hover {
-    background-color: var(--vermelho_escuro);
-  }
-  
-  .menu-navegacao {
-    display: flex;
-    justify-content: center;
-    gap: 6%;
-    padding: 2rem 0;
-  }
-  
-  a {
-    color: black
-  }
+  display: flex;
+  align-items: center;
+  gap: 0.33rem;
+  padding: 0.5rem;
+  background-color: var(--vermelho);
+  height: 6rem;
+}
+
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.container_img img {
+  width: 70%;
+  height: 80%;
+}
+
+.divisoria {
+  background-color: var(--branco);
+  width: 0.15rem;
+  height: 80%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 70%;
+}
+
+.nav a {
+  color: var(--branco);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  background-color: var(--vermelho_escuro);
+}
+
+/* Navegação */
+.navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 2rem 0;
+}
+
+.navegacao a {
+  background-color: var(--cinza);
+  padding: 4px 30px;
+  border-radius: 18px;
+  text-decoration: none;
+}
+
+.navegacao a:hover {
+  background-color: var(--vermelho);
+}
+
+.menu-navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 2rem 0;
+}
+
+a {
+  color: black
+}
