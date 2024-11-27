@@ -1,99 +1,97 @@
-
-
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Variáveis de tema */
 :root {
-    --vermelho: #cc0000;
-    --vermelho_escuro: #9A1915;
-    --cinza: #D9D9D9;
-    --preto: #000;
-    --branco: #ffffff;
-    --fonte_texto: 'Montserrat', sans-serif;
+  --vermelho: #cc0000;
+  --vermelho_escuro: #9A1915;
+  --cinza: #D9D9D9;
+  --preto: #000;
+  --branco: #ffffff;
+  --fonte_texto: 'Montserrat', sans-serif;
 }
 
 /* Reset e estilo geral */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fonte_texto);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte_texto);
 }
 
 /* Header */
 .container_header {
-    display: flex;
-    align-items: center;
-    gap: 0.33rem;
-    padding: 0.5rem;
-    background-color: var(--vermelho);
-    height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.33rem;
+  padding: 0.5rem;
+  background-color: var(--vermelho);
+  height: 6rem;
 }
 
 .container_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
 }
 
 .container_img img {
-    width: 70%;
-    height: 80%;
+  width: 70%;
+  height: 80%;
 }
 
 .divisoria {
-    background-color: var(--branco);
-    width: 0.15rem;
-    height: 80%;
+  background-color: var(--branco);
+  width: 0.15rem;
+  height: 80%;
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 70%;
 }
 
 .nav a {
-    color: var(--branco);
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
+  color: var(--branco);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .nav a:hover {
-    background-color: var(--vermelho_escuro);
+  background-color: var(--vermelho_escuro);
 }
 
 /* Navegação */
 .navegacao {
-    display: flex;
-    justify-content: center;
-    gap: 6%;
-    padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 2rem 0;
 }
 
 .navegacao a {
-    background-color: var(--cinza);
-    padding: 4px 30px;
-    border-radius: 18px;
-    text-decoration: none;
+  background-color: var(--cinza);
+  padding: 4px 30px;
+  border-radius: 18px;
+  text-decoration: none;
 }
 
 .navegacao a:hover {
-    background-color: var(--vermelho);
+  background-color: var(--vermelho);
 }
 
 .menu-navegacao {
-    display: flex;
-    justify-content: center;
-    gap: 6%;
-    padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 2rem 0;
 }
 
 a {
@@ -104,18 +102,18 @@ a {
 .simulado {
   margin-left: 30px;
   margin-right: 30px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid var(--vermelho);
-    margin-bottom: 10px;
-    border-radius: 15px;
-    transition: background-color 0.3s;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid var(--vermelho);
+  margin-bottom: 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .simulado:hover {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 /* Footer */
@@ -178,7 +176,8 @@ a {
 
 .footer .icones img {
   display: inline-block;
-  margin-left: 25px;;
+  margin-left: 25px;
+  ;
 }
 
 .icones {
@@ -200,7 +199,7 @@ a {
   align-items: center;
 }
 
-.team{
+.team {
   display: flex;
   justify-content: space-around;
   margin: 0px 0px 50px 0px;
@@ -209,11 +208,10 @@ a {
 }
 
 .icones {
-display: flex;
-justify-content: center;
-gap: 10px;
-padding: 10px 0;
-align-items: center;
-margin-left: -135px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  margin-left: -135px;
 }
-

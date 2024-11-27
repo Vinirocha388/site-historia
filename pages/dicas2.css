@@ -31,50 +31,50 @@
     padding: 0.5rem;
     background-color: var(--vermelho);
     height: 6rem;
-  }
-  
-  .container_img {
+}
+
+.container_img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
     height: 100%;
-  }
-  
-  .container_img img {
+}
+
+.container_img img {
     width: 70%;
     height: 80%;
-  }
-  
-  .divisoria {
+}
+
+.divisoria {
     background-color: var(--branco);
     width: 0.15rem;
     height: 80%;
-  }
-  
-  .nav {
+}
+
+.nav {
     display: flex;
     justify-content: center;
     gap: 5rem;
     width: 70%;
-  }
-  
-  .nav a {
+}
+
+.nav a {
     color: var(--branco);
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
-  }
-  
-  .nav a:hover {
+}
+
+.nav a:hover {
     background-color: var(--vermelho_escuro);
-  }
-  
-  .strong {
+}
+
+.strong {
     font-family: var(--fonte_texto);
-  }
+}
 
 /* Main */
 
@@ -156,13 +156,14 @@ main {
     gap: 2%;
 }
 
-.dica1, .dica2 {
+.dica1,
+.dica2 {
     width: 49%;
     height: 20rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-} 
+}
 
 .informacao {
     width: 50%;
@@ -188,84 +189,85 @@ main {
 .footer-text {
     background-color: #9a1915;
     color: white;
-  
-  }
-  
-  .header-nav .nav-link {
+
+}
+
+.header-nav .nav-link {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
     margin: 6px;
     color: #ffffffff;
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #9a1915;
     color: white;
     margin-top: 50px;
-  }
-  
-  .footer .icones {
+}
+
+.footer .icones {
     background-color: #e30613;
-  }
-  
-  .senai {
+}
+
+.senai {
     width: 20%;
     display: inline-block;
     text-align: center;
     padding: 30px 0 20px 0;
     margin-left: 25%;
-  }
-  
-  .senai h3 {
+}
+
+.senai h3 {
     text-align: left;
-  }
-  
-  .senai p {
+}
+
+.senai p {
     text-align: left;
-  }
-  
-  .sesi {
+}
+
+.sesi {
     width: 20%;
     display: inline-block;
     margin-left: 3%;
     text-align: center;
     padding: 0 0 20px 0px;
-  }
-  
-  .sesi h3 {
+}
+
+.sesi h3 {
     text-align: left;
-  }
-  
-  .sesi p {
+}
+
+.sesi p {
     text-align: left;
-  }
-  
-  .footer .icones img {
+}
+
+.footer .icones img {
     display: inline-block;
-    margin-left: 25px;;
-  }
-  
-  .icones {
+    margin-left: 25px;
+    ;
+}
+
+.icones {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     background-color: #9a1915;
     color: white;
-  }
-  
+}
 
-  
-  .img {
+
+
+.img {
     width: 25%;
     margin-bottom: 300px;
     align-items: center;
-  }
+}
 
-  .team{
+.team {
     display: flex;
     justify-content: space-around;
     margin: 0px 0px 50px 0px;
@@ -274,114 +276,139 @@ main {
 }
 
 .icones {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 0;
-  align-items: center;
-  margin-left: -135px;
- }
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    align-items: center;
+    margin-left: -135px;
+}
 
 /* Responsividade Telas Grandes */
 @media (min-width: 769px) and (max-width: 1024px) {
-    
+
     /* Menu */
     .menu-materias ul {
         top: 64px;
         width: 18%;
     }
+
     #btn-menu {
         top: 10px;
         width: 90px;
     }
+
     .linha {
         width: 26px;
         height: 2px;
     }
-    
+
     /* Header */
     .container_header {
         height: 4rem;
     }
+
     .container_img {
         width: 30%;
     }
+
     .container_img img {
         width: 70%;
         height: 75%;
         padding: 0 20px;
     }
+
     .divisoria {
         width: 0.14rem;
     }
+
     .nav {
         width: 45%;
         gap: 4rem;
     }
+
     .nav a {
         font-size: 14px;
     }
+
     /* Banner */
     .banner {
         height: 28rem;
     }
+
     /* Navegação */
     .navegacao {
         height: 4rem;
     }
+
     .links_navegacao {
         padding: 1rem 0;
         gap: 0.8rem;
     }
+
     /* Conteúdo */
     .conteudo {
         height: 222rem;
         gap: 0.8rem;
     }
+
     .divisao_dicas {
         flex-direction: column;
         align-items: center;
     }
-    .dica1, .dica2 {
+
+    .dica1,
+    .dica2 {
         width: 90%;
         height: 18rem;
         justify-content: space-between
     }
+
     .informacao {
         width: 47%;
         height: 50%;
     }
+
     .imagem {
         width: 50%;
         height: 90%;
     }
+
     /* Footer */
     .footer {
         margin-top: 10px;
     }
+
     .footer .enderecos {
         display: flex;
         justify-content: center;
         align-self: center;
         height: 4.3rem;
     }
+
     .footer .icones {
         height: 2rem;
         display: flex;
         justify-content: center;
         align-self: center;
     }
-    .senai, .sesi {
+
+    .senai,
+    .sesi {
         width: 40%;
         height: 90%;
         padding: 10px 0 10px 0;
         margin-left: 0;
     }
-    .senai h3, .sesi h3 {
+
+    .senai h3,
+    .sesi h3 {
         text-align: center;
         font-size: 14px;
     }
-    .senai p, .sesi p {
+
+    .senai p,
+    .sesi p {
         text-align: center;
         font-size: 12px;
     }
@@ -389,118 +416,149 @@ main {
 
 /* Responsividade Telas Médias */
 @media (min-width: 300px) and (max-width: 768px) {
+
     /* Menu */
     #btn-menu {
         top: 2px;
         width: 2%;
     }
+
     .linha {
         width: 22px;
         height: 0.12rem;
         margin: 6px auto;
     }
+
     /* Header */
     .container_header {
         height: 3rem;
     }
+
     .container_img {
         width: 30%;
     }
+
     .container_img img {
         width: 100%;
         height: 79%;
         padding: 0 10px;
     }
+
     .divisoria {
         width: 0.1rem;
     }
+
     .nav {
         width: 57%;
         gap: 1.1rem;
     }
+
     .nav a {
         font-size: 12px;
     }
+
     /* Banner */
     .banner {
         height: 20rem;
     }
+
     /* Navegação */
     .navegacao {
         height: 3rem;
     }
+
     .links_navegacao {
         padding: 1rem 0;
         gap: 1rem;
     }
+
     .navegacao a {
         padding: 3px 5px;
     }
+
     .navegacao li {
         font-size: 12px;
     }
+
     /* Conteúdo */
     .conteudo {
         height: 304rem;
         gap: 0.8rem;
     }
+
     .divisao_dicas {
         flex-direction: column;
         align-items: center;
     }
-    .dica1, .dica2 {
+
+    .dica1,
+    .dica2 {
         width: 90%;
         height: 25rem;
         flex-direction: column;
         justify-content: space-between
     }
+
     .informacao {
         width: 100%;
         height: 50%;
     }
+
     .informacao h3 {
         font-size: 16px;
     }
+
     .informacao p {
         font-size: 14px;
     }
+
     .imagem {
         width: 100%;
         height: 50%;
         display: flex;
         justify-content: center;
     }
+
     .imagem img {
         width: 80%;
         height: 100%;
     }
+
     /* Footer */
     .footer {
         margin-top: 30px;
     }
+
     .footer .enderecos {
         display: flex;
         justify-content: center;
         align-self: center;
         height: 4.3rem;
     }
+
     .footer .icones {
         height: 2rem;
         display: flex;
         justify-content: center;
         align-self: center;
     }
-    .senai, .sesi {
+
+    .senai,
+    .sesi {
         width: 40%;
         height: 90%;
         padding: 10px 0 10px 0;
         margin-left: 0;
     }
-    .senai h3, .sesi h3 {
+
+    .senai h3,
+    .sesi h3 {
         text-align: center;
         font-size: 12px;
     }
-    .senai p, .sesi p {
+
+    .senai p,
+    .sesi p {
         text-align: center;
         font-size: 10px;
     }

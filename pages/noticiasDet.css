@@ -22,6 +22,87 @@ body {
     background-color: #f2f2f2;
 }
 
+.card-profile {
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    height: 20rem;
+}
+
+p{
+    text-align: justify;
+}
+
+.card-profile:hover {
+    transform: translateY(-10px);
+    animation: pulse 1s;
+}
+
+
+
+
+.card-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+}
+
+
+
+
+.card-profile .btn {
+    background: white;
+    color: #ff0000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+
+
+
+.card-profile .btn:hover {
+    background: #990f0f;
+    color: white;
+}
+
+
+
+
+.social-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s;
+}
+
+
+.social-icons i:hover {
+    color: #cc0202;
+}
+
+.divider {
+    height: 2px;
+    width: 80%;
+    background: white;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.arrow {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    animation: bounce 2s infinite;
+}
+
 
 .container_header {
     background-color: var(--vermelho);
