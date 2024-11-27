@@ -115,6 +115,27 @@ main {
 /* Banner */
 
 .banner {
+
+    width: 100%;
+    height: 45rem;
+    position: relative;
+    display: inline-block;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.texto-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10rem;
+    padding: 10px;
+
   width: 100%;
   height: 45rem;
   position: relative;
@@ -134,6 +155,7 @@ main {
   color: white;
   font-size: 10rem;
   padding: 10px;
+
 }
 
 /* Navegação */
@@ -298,30 +320,51 @@ h1 {
 
 /* Discord */
 
+.comunidade{
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
 .comunidade h1 {
   font-size: 40px;
   margin: 20px;
 }
 
+.comu-disc{
+  text-align: center;
+  margin: 50px;
+}
+
+
+.comu-text{
+  text-align: center;
+  margin: 10px;
+}
+
+.imagem_comunidade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem_comunidade img {
+ width: 30%;
+ height: 50%;
+ cursor: pointer;
 
 .imagem_comunidade .link-dics {
   position: absolute;
   top: 75%;
-  /* Ajusta a posição do texto verticalmente */
   left: 50%;
-  /* Ajusta a posição do texto horizontalmente */
   transform: translate(-50%, -50%);
-  /* Centraliza o texto */
   color: white;
-  /* Cor do texto */
   font-size: 2em;
-  /* Tamanho do texto */
   background-color: rgba(154, 154, 154, 0.5);
-  /* Fundo semitransparente */
   padding: 10px;
   border-radius: 5px;
-  /* Deixe as bordas arredondadas */
 }
 
 /* Footer */
