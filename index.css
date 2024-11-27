@@ -116,25 +116,25 @@ main {
 
 .banner {
 
-    width: 100%;
-    height: 45rem;
-    position: relative;
-    display: inline-block;
+  width: 100%;
+  height: 45rem;
+  position: relative;
+  display: inline-block;
 }
 
 .banner img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-.texto-banner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 10rem;
-    padding: 10px;
+.texto-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10rem;
+  padding: 10px;
 
   width: 100%;
   height: 45rem;
@@ -313,7 +313,7 @@ main {
 
 /* Discord */
 
-.comunidade{
+.comunidade {
   margin: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -326,27 +326,27 @@ main {
   margin: 20px;
 }
 
-.comu-disc{
+.comu-disc {
   text-align: center;
   margin: 50px;
 }
 
 
-.comu-text{
+.comu-text {
   text-align: center;
   margin: 10px;
 }
 
-.imagem_comunidade{
+.imagem_comunidade {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .imagem_comunidade img {
- width: 30%;
- height: 50%;
- cursor: pointer;
+  width: 30%;
+  height: 50%;
+  cursor: pointer;
 }
 
 .imagem_comunidade .link-dics {
