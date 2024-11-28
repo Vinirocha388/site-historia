@@ -155,7 +155,11 @@ main {
     height: 0.2rem;
 }
 
-.Titulodapag {
+.titulo-principal{
+    text-align: center;
+}
+
+.sub-titulo {
     width: 100%;
     height: auto;
 }
