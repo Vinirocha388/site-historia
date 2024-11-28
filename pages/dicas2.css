@@ -110,29 +110,22 @@ main {
 
 .banner {
     width: 100%;
-    height: 46rem;
+    height: 45rem;
 }
 
 .banner img {
     width: 100%;
     height: 100%;
-    filter: brightness(0.78);
+    filter: brightness(0.68);
 }
 
 /* Navegação */
 
 .navegacao {
-    justify-content: space-between;
-    width: 100%;
-    height: 5rem;
-}
-
-.links_navegacao {
     display: flex;
-    justify-content: space-evenly;
     padding: 2rem 0;
-    gap: 3rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20%;
 }
 
 .navegacao a {
@@ -158,52 +151,72 @@ main {
     height: 0.2rem;
 }
 
-/* Conteúdo */
+/* Calendário */
+
+h1 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+/* Noticias */
+
+.container_frase {
+    width: 750px;
+    height: 500px;
+    border: 1px solid;
+    margin: auto;
+    border-radius: 50px;
+}
 
 .conteudo {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.periodo {
+    margin-bottom: 30px;
+}
+
+.periodo h2 {
+    color: #b22222;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.periodo img {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 135rem;
-    gap: 2rem;
-    justify-content: center;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.divisao_dicas {
-    width: 98%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2%;
+.periodo ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-.dica1,
-.dica2 {
-    width: 49%;
-    height: 20rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.periodo .list {
+    list-style: disc;
 }
 
-.informacao {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+.periodo ul li {
+    margin-bottom: 5px;
+    font-size: 1em;
 }
 
-.imagem {
-    width: 50%;
-    height: 90%;
-}
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
 
-.imagem img {
-    width: 100%;
-    height: 100%;
+    .periodo img {
+        width: 100%;
+    }
 }
 
 /* Footer */
@@ -225,7 +238,7 @@ main {
 .footer {
     background-color: #9a1915;
     color: white;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .footer .icones {
@@ -236,7 +249,7 @@ main {
     width: 20%;
     display: inline-block;
     text-align: center;
-    padding: 30px 0 20px 0;
+    padding: 50px 0 40px 0;
     margin-left: 25%;
 }
 
@@ -304,284 +317,4 @@ main {
     padding: 10px 0;
     align-items: center;
     margin-left: -135px;
-}
-
-/* Responsividade Telas Grandes */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    /* Menu */
-    .menu-materias ul {
-        top: 64px;
-        width: 18%;
-    }
-
-    #btn-menu {
-        top: 10px;
-        width: 90px;
-    }
-
-    .linha {
-        width: 26px;
-        height: 2px;
-    }
-
-    /* Header */
-    .container_header {
-        height: 4rem;
-    }
-
-    .container_img {
-        width: 30%;
-    }
-
-    .container_img img {
-        width: 70%;
-        height: 75%;
-        padding: 0 20px;
-    }
-
-    .divisoria {
-        width: 0.14rem;
-    }
-
-    .nav {
-        width: 45%;
-        gap: 4rem;
-    }
-
-    .nav a {
-        font-size: 14px;
-    }
-
-    /* Banner */
-    .banner {
-        height: 28rem;
-    }
-
-    /* Navegação */
-    .navegacao {
-        height: 4rem;
-    }
-
-    .links_navegacao {
-        padding: 1rem 0;
-        gap: 0.8rem;
-    }
-
-    /* Conteúdo */
-    .conteudo {
-        height: 222rem;
-        gap: 0.8rem;
-    }
-
-    .divisao_dicas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .dica1,
-    .dica2 {
-        width: 90%;
-        height: 18rem;
-        justify-content: space-between
-    }
-
-    .informacao {
-        width: 47%;
-        height: 50%;
-    }
-
-    .imagem {
-        width: 50%;
-        height: 90%;
-    }
-
-    /* Footer */
-    .footer {
-        margin-top: 10px;
-    }
-
-    .footer .enderecos {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        height: 4.3rem;
-    }
-
-    .footer .icones {
-        height: 2rem;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    }
-
-    .senai,
-    .sesi {
-        width: 40%;
-        height: 90%;
-        padding: 10px 0 10px 0;
-        margin-left: 0;
-    }
-
-    .senai h3,
-    .sesi h3 {
-        text-align: center;
-        font-size: 14px;
-    }
-
-    .senai p,
-    .sesi p {
-        text-align: center;
-        font-size: 12px;
-    }
-}
-
-/* Responsividade Telas Médias */
-@media (min-width: 300px) and (max-width: 768px) {
-
-    /* Menu */
-    #btn-menu {
-        top: 2px;
-        width: 2%;
-    }
-
-    .linha {
-        width: 22px;
-        height: 0.12rem;
-        margin: 6px auto;
-    }
-
-    /* Header */
-    .container_header {
-        height: 3rem;
-    }
-
-    .container_img {
-        width: 30%;
-    }
-
-    .container_img img {
-        width: 100%;
-        height: 79%;
-        padding: 0 10px;
-    }
-
-    .divisoria {
-        width: 0.1rem;
-    }
-
-    .nav {
-        width: 57%;
-        gap: 1.1rem;
-    }
-
-    .nav a {
-        font-size: 12px;
-    }
-
-    /* Banner */
-    .banner {
-        height: 20rem;
-    }
-
-    /* Navegação */
-    .navegacao {
-        height: 3rem;
-    }
-
-    .links_navegacao {
-        padding: 1rem 0;
-        gap: 1rem;
-    }
-
-    .navegacao a {
-        padding: 3px 5px;
-    }
-
-    .navegacao li {
-        font-size: 12px;
-    }
-
-    /* Conteúdo */
-    .conteudo {
-        height: 304rem;
-        gap: 0.8rem;
-    }
-
-    .divisao_dicas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .dica1,
-    .dica2 {
-        width: 90%;
-        height: 25rem;
-        flex-direction: column;
-        justify-content: space-between
-    }
-
-    .informacao {
-        width: 100%;
-        height: 50%;
-    }
-
-    .informacao h3 {
-        font-size: 16px;
-    }
-
-    .informacao p {
-        font-size: 14px;
-    }
-
-    .imagem {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .imagem img {
-        width: 80%;
-        height: 100%;
-    }
-
-    /* Footer */
-    .footer {
-        margin-top: 30px;
-    }
-
-    .footer .enderecos {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        height: 4.3rem;
-    }
-
-    .footer .icones {
-        height: 2rem;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    }
-
-    .senai,
-    .sesi {
-        width: 40%;
-        height: 90%;
-        padding: 10px 0 10px 0;
-        margin-left: 0;
-    }
-
-    .senai h3,
-    .sesi h3 {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .senai p,
-    .sesi p {
-        text-align: center;
-        font-size: 10px;
-    }
 }
