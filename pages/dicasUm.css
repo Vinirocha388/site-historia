@@ -113,10 +113,14 @@ main {
     height: 45rem;
 }
 
+.png {
+    width: 60%;
+}
+
 .banner img {
     width: 100%;
     height: 100%;
-    filter: brightness(0.68);
+    filter: brightness(0.90);
 }
 
 /* Navegação */
@@ -151,14 +155,15 @@ main {
     height: 0.2rem;
 }
 
-/* Calendário */
+.Titulodapag {
+    width: 100%;
+    height: auto;
+}
 
 h1 {
     font-size: 40px;
     margin: 20px;
 }
-
-/* Noticias */
 
 .container_frase {
     width: 750px;
@@ -169,16 +174,26 @@ h1 {
 }
 
 .conteudo {
-    width: 80%;
+    width: 50%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fffdfd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .periodo {
     margin-bottom: 30px;
+}
+
+.info_grande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    width: 80%;
 }
 
 .periodo h2 {
@@ -198,6 +213,10 @@ h1 {
 .periodo ul {
     list-style: none;
     padding-left: 0;
+}
+
+.periodo .texto_grande {
+    width: 80%;
 }
 
 .periodo .list {

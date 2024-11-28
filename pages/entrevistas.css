@@ -99,6 +99,7 @@ a {
 }
 
 /* Conteúdo */
+.
 
 h2 {
     text-align: center;
@@ -152,7 +153,6 @@ video {
 .footer-text {
     background-color: #9a1915;
     color: white;
-
 }
 
 .header-nav .nav-link {
@@ -220,9 +220,7 @@ video {
 .footer-text {
     background-color: #9a1915;
     color: white;
-}
-
-
+  }
 
 .img {
     width: 25%;
