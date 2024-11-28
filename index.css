@@ -212,6 +212,10 @@ main {
   color: var(--preto);
 }
 
+  .link{
+    text-decoration: none;
+  }
+
 /* CARDS */
 .container {
   color: rgb(0, 0, 0);
