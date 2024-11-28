@@ -7,47 +7,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="/image/senai.ico">
+
 <body>
-
-    <!-------------Menu------------->
-
-    <button onclick="animar(), animarMenu()" id="btn-menu">
-        <span class="linha"></span>
-        <span class="linha"></span>
-        <span class="linha"></span>
-    </button>
-
-    <script>
-        function animar() {
-            const btn = document.getElementById('btn-menu');
-            btn.classList.toggle('ativo');
-        }
-    </script>
-    <script>
-        function animarMenu() {
-            const menu = document.getElementById('menu-materias');
-            menu.classList.toggle('abrir');
-            menu.addEventListener('click', animarMenu);
-        }
-    </script>
-    <header>
-        <nav class="menu-materias" id="menu-materias">
-            <ul>
-                <li><a href="portugues.html">Português</a></li>
-                <li><a href="matematica.html">Matemática</a></li>
-                <li><a href="historia.html">História</a></li>
-                <li><a href="geografia.html">Geografia</a></li>
-                <li><a href="biologia.html">Biologia</a></li>
-                <li><a href="fisica.html">Física</a></li>
-                <li><a href="quimica.html">Química</a></li>
-                <li><a href="artes.html">Artes</a></li>
-                <li><a href="filosofia.html">Filosofia</a></li>
-                <li><a href="sociologia.html">Sociologia</a></li>
-                <li><a href="edFisica.html">Ed. Física</a></li>
-                <li><a href="ingles.html">Inglês</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <!-------------Header------------->
 
@@ -57,27 +18,33 @@
         </div>
         <div class="divisoria"></div>
         <div class="nav">
-            <a href="../index.html"><strong>Home</strong></a>
             <a href="/pages/about.html"><strong>Sobre</strong></a>
             <a href="pages/cadastro.html"><strong>Cadastre-se</strong></a>
         </div>
     </header>
-
-    <!-------------Conteúdo------------>
-    <!-- teste -->
-
     <main>
 
-        <section class="banner">
+        <div class="banner">
+            <h1 class="texto-banner">História</h1>
             <img src="image/home/banner.jpg" alt="">
-        </section>
+        </div>
 
         <section class="navegacao">
-            <a href="./pages/carreiras.html"><li>CARREIRAS</li></a>
-            <a href="./pages/simulados.html"><li>SIMULADOS</li></a>
-            <a href="./pages/dicas.html"><li>DICAS</li></a>
-            <a href="./pages/entrevistas.html"><li>ENTREVISTAS</li></a>
-            <a href="./pages/noticias.html"><li>NOTÍCIAS</li></a>
+            <a href="./pages/carreiras.html">
+                <li>CARREIRAS</li>
+            </a>
+            <a href="./pages/simulados.html">
+                <li>SIMULADOS</li>
+            </a>
+            <a href="./pages/dicas.html">
+                <li>DICAS</li>
+            </a>
+            <a href="./pages/entrevistas.html">
+                <li>ENTREVISTAS</li>
+            </a>
+            <a href="./pages/noticiasDet.html">
+                <li>NOTÍCIAS</li>
+            </a>
         </section>
         <div class="divisoria_nav"></div>
 
@@ -96,106 +63,102 @@
             </div>
 
         </section>
-            
+
         <section class="simulados">
             <h1><strong>Simulados</strong></h1>
 
             <div class="container">
                 <div class="fileira">
 
-                <div class="card">
+                    <div class="card">
 
-                    <div class="card-simulados">
-                        <img src="./image/home/guerrafria.png" alt="rover" />
+                        <div class="card-simulados">
+                            <img src="./image/home/guerrafria.png" alt="rover" />
+                        </div>
+
+                        <a href="https:www.jotform.com/build/243036863744057" class="link" target="_blank">
+                            <div class="simulado1">
+                                <span class="tag tag-teal">simulados do ano de 2023</span>
+                                <h1></h1>
+                                <p>20 questões</p>
+                                <p>2 horas de duração</p>
+                            </div>
+                        </a>
                     </div>
-                   
-                    <a href="#" class="link">
-                        <div class="simulado1">
-                            <span class="tag tag-teal">simulados do ano de 2023</span>
-                               <h1></h1> 
-                                <p>90 Questões</p>
-                               <p>5 horas de duração</p>
+
+                    <div class="card">
+                        <div class="card-simulados">
+                            <img src="./image/home/guerrafria.png" alt="rover" />
                         </div>
-                    </a>
+
+                        <a href="https:www.jotform.com/build/243037604836053" class="link" target="_blank">
+                            <div class="simulado1">
+                                <span class="tag tag-purple">simulados do ano de 2024</span>
+                                <h1></h1>
+                                <p>40 Questões</p>
+                                <p>3 horas de duração</p>
+                            </div>
+                        </a>
                     </div>
-           
+
+
                     <div class="card">
                         <div class="card-simulados">
                             <img src="./image/home/guerrafria.png" alt="rover" />
                         </div>
-                       
-                        <a href="#" class="link">
+
+                        <a href="https:www.jotform.com/build/243036925762056" class="link" target="_blank">
                             <div class="simulado1">
-                                <span class="tag tag-purple">simulados do ano de 2023</span>
-                                   <h1></h1> 
-                                    <p>90 Questões</p>
-                                   <p>5 horas de duração</p>
+                                <span class="tag tag-pink">simulados do ano de 2021</span>
+                                <h1></h1>
+                                <p>60 Questões</p>
+                                <p>4 horas de duração</p>
                             </div>
                         </a>
-                        </div>
-             
-    
+                    </div>
+
+
                     <div class="card">
                         <div class="card-simulados">
                             <img src="./image/home/guerrafria.png" alt="rover" />
                         </div>
-                       
-                        <a href="#" class="link">
+
+                        <a href="https:www.jotform.com/build/243036947508058" class="link" target="_blank">
                             <div class="simulado1">
-                                <span class="tag tag-pink">simulados do ano de 2023</span>
-                                   <h1></h1> 
-                                    <p>90 Questões</p>
-                                   <p>5 horas de duração</p>
+                                <span class="tag tag-green">Eleve seu nível</span>
+                                <h1></h1>
+                                <p>80 Questões</p>
+                                <p>6 horas de duração</p>
                             </div>
                         </a>
-                        </div>
-        
-    
-                    <div class="card">
-                        <div class="card-simulados">
-                            <img src="./image/home/guerrafria.png" alt="rover" />
-                        </div>
-                       
-                        <a href="#" class="link">
-                            <div class="simulado1">
-                                <span class="tag tag-green">simulados do ano de 2023</span>
-                                   <h1></h1> 
-                                    <p>90 Questões</p>
-                                   <p>5 horas de duração</p>
-                            </div>
-                        </a>
-                        </div>
-                
-                </div>
-                </div>
-        </section>
+                    </div>
 
-            
-        <section class="comunidade">
-            <h1><strong>Comunidade</strong></h1>
-
-            <div class="informacao_comunidade">
-                <div class="texto_comunidade">
-                    <h4><strong>Junte-se à nossa comunidade de alunos no Discord!</strong></h4>
-                    <p>Lá você pode trocar dicas de estudo, tirar dúvidas em tempo real, participar de debates sobre
-                        temas de vestibular e ainda se conectar com outros estudantes que estão na mesma jornada.
-                        Não
-                        perca essa oportunidade de fortalecer sua preparação e fazer parte de um grupo que está
-                        sempre
-                        apoiando uns aos outros!</p>
-                        <button onclick="window.location.href='https://discord.com';">
-                            Entre no Discord
-                        </button>
-                    
-                </div>
-
-                <div class="imagem_comunidade">
-                    <h2 class="link-disc">ghkfdyuowgefie</h2>
-                    <img src="image/home/discord.png" alt="discord">
                 </div>
             </div>
-
         </section>
+
+
+
+        <section class="comunidade">
+            <h1 class="comu-disc"><strong>Junte-se à nossa comunidade de alunos no Discord!</strong></h1>
+
+            <div class="texto_comunidade">
+                <p class="comu-text">Lá você pode trocar dicas de estudo, tirar dúvidas em tempo real,
+                    participar de debates sobre
+                    temas de vestibular e ainda se conectar com outros estudantes que estão na mesma jornada.
+                    Não
+                    perca essa oportunidade de fortalecer sua preparação e fazer parte de um grupo que está
+                    sempre
+                    apoiando uns aos outros!</p>
+
+            </div>
+
+            <div class="imagem_comunidade">
+                <img src="./image/home/discord-icon=.png" alt="discord"
+                    onclick="window.location.href='https://discord.com';">
+
+            </div>
+
 
     </main>
 
@@ -203,30 +166,35 @@
 
     <footer class="footer">
         <div class="icones">
-          <a href="https://www.facebook.com/senaisp.valinhos?mibextid=ZbWKwL"><img src="/image/icons/facebook.png" alt="facebook" width=25px height=25px/></a>
-          <a href="https://www.instagram.com/senaivalinhos?igsh=MXRjcnppaTk3ZXFpaA=="><img src="/image/icons/instagram.png" alt="instagram" width=25px height=25px/></a>
-          <a href="https://api.whatsapp.com/send?phone=551133220050"><img src="/image/icons/whatsapp.png" alt="whatsapp" width=25px height=25px/></a>
-          <a href="https://youtube.com/@senaisaopaulo-escolasenaiv6966?si=uI1RtvEwX4h1qaFv"><img src="/image/icons/youtube.png" alt="youtube" width=25px height=25px/></a>
-          <a href="https://www.linkedin.com/school/senai-de-valinhos/"><img src="/image/icons/linkedin.png" alt="linkedin" width=25px height=25px/></a>
+            <a href="https://www.facebook.com/senaisp.valinhos?mibextid=ZbWKwL"><img src="/image/icons/facebook.png"
+                    alt="facebook" width=25px height=25px /></a>
+            <a href="https://www.instagram.com/senaivalinhos?igsh=MXRjcnppaTk3ZXFpaA=="><img
+                    src="/image/icons/instagram.png" alt="instagram" width=25px height=25px /></a>
+            <a href="https://api.whatsapp.com/send?phone=551133220050"><img src="/image/icons/whatsapp.png"
+                    alt="whatsapp" width=25px height=25px /></a>
+            <a href="https://youtube.com/@senaisaopaulo-escolasenaiv6966?si=uI1RtvEwX4h1qaFv"><img
+                    src="/image/icons/youtube.png" alt="youtube" width=25px height=25px /></a>
+            <a href="https://www.linkedin.com/school/senai-de-valinhos/"><img src="/image/icons/linkedin.png"
+                    alt="linkedin" width=25px height=25px /></a>
         </div>
-          
+
         <div class="enderecos">
-          <div class="senai">
-              <h3>EDIFÍCIO REDE SENAI Valinhos</h3>
-              <p>
-                R. Artur Fernandes Querido, 55 - Vila Santo<br/>Antonio, Valinhos -
-                SP, 13270-530
-              </p>
+            <div class="senai">
+                <h3>EDIFÍCIO REDE SENAI Valinhos</h3>
+                <p>
+                    R. Artur Fernandes Querido, 55 - Vila Santo<br />Antonio, Valinhos -
+                    SP, 13270-530
+                </p>
             </div>
             <img src="..//image/icons/linha.png" alt="linha">
-      
-              <div class="sesi">
-                  <h3>EDIFÍCIO REDE SESI Valinhos</h3>
-                  <p>Rod. Flávio de Carvalho, 2787 - Jardim São<br/>Paulo, Valinhos - SP, 13273-450</p>
-              </div>
+
+            <div class="sesi">
+                <h3>EDIFÍCIO REDE SESI Valinhos</h3>
+                <p>Rod. Flávio de Carvalho, 2787 - Jardim São<br />Paulo, Valinhos - SP, 13273-450</p>
+            </div>
         </div>
-  
-      </footer>
+
+    </footer>
 
 </body>
 

@@ -14,88 +14,6 @@ body {
     background-color: #f2f2f2;
 }
 
-/* Menu */
-
-.menu-materias ul {
-    background-color: #d31e27;
-    backdrop-filter: blur(10px);
-    position: absolute;
-    top: 90px;
-    z-index: 9999;
-    left: 80%;
-    width: 15%;
-    height: 0;
-    visibility: hidden;
-    transition: 0.5s;
-    overflow: hidden;
-    margin-right: 0;
-}
-
-.menu-materias.abrir ul {
-    visibility: visible;
-    height: calc(72vh - 7px);
-}
-
-.menu-materias ul li:hover {
-    background-color: #d31e27;
-}
-
-.menu-materias ul li {
-    display: block;
-    padding: 10px 30px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.menu-materias ul li a {
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: justify;
-}
-
-#btn-menu {
-    width: 40px;
-    height: 40px;
-    border: 0px solid #d31e27;
-    background: transparent;
-    border-radius: 10px;
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    cursor: pointer;
-
-}
-
-.linha {
-    width: 40px;
-    height: 3px;
-    background-color: white;
-    display: block;
-    margin: 10px auto;
-    position: relative;
-    transform-origin: center;
-    transition: .2s;
-}
-
-#btn-menu.ativo .linha:nth-child(1) {
-    transform: translateY(12px) rotate(-45deg);
-    background-color: white;
-}
-
-#btn-menu.ativo .linha:nth-child(3) {
-    transform: translateY(-15px) rotate(45deg);
-    background-color: white;
-}
-
-#btn-menu.ativo .linha:nth-child(2) {
-    width: 0;
-    height: 4px;
-}
-
-#btn-menu.ativo {
-    border: 0px solid black;
-}
 
 /* Header fixo no topo */
 .container_header {
@@ -104,7 +22,7 @@ body {
     left: 0;
     width: 100%;
     height: 6rem;
-    background-color: #d31e27;
+    background-color: #cc0000;
     display: flex;
     align-items: center;
     padding: 0.5rem;
@@ -147,7 +65,7 @@ body {
 }
 
 .nav a:hover {
-    background-color: rgb(214, 43, 43);
+    background-color: #9A1915;
 }
 
 /* Container de login centralizado */
@@ -159,7 +77,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    margin-top: 8rem; /* Espaço para o header */
+    margin-top: 8rem;
+    /* Espaço para o header */
 }
 
 .header .logo {
@@ -168,7 +87,8 @@ body {
 }
 
 .header h2 {
-    color: #cc0000; /* Cor tradicional do SENAI */
+    color: #cc0000;
+    /* Cor tradicional do SENAI */
     font-size: 1.5em;
 }
 
@@ -193,7 +113,8 @@ body {
 .login-button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #cc0000; /* Cor do SENAI */
+    background-color: #cc0000;
+    /* Cor do SENAI */
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -210,7 +131,7 @@ body {
 }
 
 .links a {
-    color: #cc0000; 
+    color: #cc0000;
     text-decoration: none;
     margin: 5px;
 }
