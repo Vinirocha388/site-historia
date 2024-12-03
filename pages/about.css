@@ -330,10 +330,13 @@ hr {
     .article-title {
         flex-direction: column;
     }
-
-    .article-img img {
-        width: 100%;
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
 
     footer {
         padding: 20px;
