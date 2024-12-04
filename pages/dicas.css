@@ -75,15 +75,16 @@
 
 
 /* Navegação */
+
 .navegacao {
   display: flex;
+  padding: 2rem 0;
   justify-content: center;
   gap: 6%;
-  padding: 2rem 0;
 }
 
 .navegacao a {
-  background-color: var(--cinza);
+  background-color: #d3d3d3;
   padding: 4px 30px;
   border-radius: 18px;
   text-decoration: none;
@@ -93,17 +94,23 @@
   background-color: var(--vermelho);
 }
 
-.menu-navegacao {
-  display: flex;
-  justify-content: center;
-  gap: 6%;
-  padding: 2rem 0;
+.navegacao li {
+  font-size: 15px;
+  color: var(--preto);
+  list-style-type: none;
+}
+
+.divisoria_nav {
+  background-color: var(--vermelho);
+  width: 10%;
+  height: 0.2rem;
+  margin-left: 45%;
+
 }
 
 a {
   color: black
 }
-
 
 body {
   font-family: Arial, sans-serif;
