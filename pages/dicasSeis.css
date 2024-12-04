@@ -170,6 +170,12 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 30px;
+    margin: 30px;
+
+}
+
 .container_frase {
     width: 750px;
     height: 500px;
@@ -231,6 +237,10 @@ h1 {
 .periodo ul li {
     margin-bottom: 5px;
     font-size: 1em;
+}
+
+.relato {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
