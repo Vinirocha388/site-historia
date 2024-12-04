@@ -183,6 +183,7 @@ main {
   border: 1px solid;
   margin: auto;
   border-radius: 50px;
+  margin-top: 1rem;
 }
 
 #container1 {
