@@ -162,6 +162,7 @@ body {
   background-color: #e30613;
   color: #ffffff;
   border-radius: 3%;
+  cursor: pointer;
 }
 
 .imagem {
