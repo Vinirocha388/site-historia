@@ -151,16 +151,88 @@ main {
     height: 0.2rem;
 }
 
+.Titulodapag {
+  width: 100%;
+  height: auto;
+}
 
+h1 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.container_frase {
+  width: 750px;
+  height: 500px;
+  border: 1px solid;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.conteudo {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fffdfd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.periodo {
+  margin-bottom: 30px;
+}
+
+.info_grande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  width: 80%;
+}
+
+.periodo h2 {
+  color: #b22222;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.periodo img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.periodo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.periodo .texto_grande {
+  width: 80%;
+}
+
+.periodo .list {
+  list-style: disc;
+}
+
+.periodo ul li {
+  margin-bottom: 5px;
+  font-size: 1em;
+}
 
 @media (max-width: 768px) {
-    main {
-        width: 95%;
-    }
+  main {
+      width: 95%;
+  }
 
-    .periodo img {
-        width: 100%;
-    }
+  .periodo img {
+      width: 100%;
+  }
 }
 
 /* Footer */
