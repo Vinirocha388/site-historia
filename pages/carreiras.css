@@ -404,3 +404,87 @@ body {
   align-items: center;
   margin-left: -135px;
 }
+
+/* Responsividade para tablets (largura máxima de 768px) */
+@media (max-width: 768px) {
+  .container_header {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+  }
+
+  .container_img {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .nav {
+      display: none; /* Oculta o menu principal */
+  }
+
+  .menu-dropdown {
+      display: block; /* Mostra o menu dropdown */
+      position: static;
+      width: 100%;
+      text-align: center;
+  }
+
+  .banner {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .titulo, .fundo img {
+      width: 100%;
+      height: auto;
+  }
+
+  .container-careers {
+      padding: 2rem;
+      gap: 1rem;
+  }
+
+  .careers-item {
+      font-size: 0.9rem;
+  }
+
+  .footer .sesi, .footer .senai {
+      width: 90%;
+      text-align: center;
+      margin: 1rem 0;
+  }
+
+  .footer .icones {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+  }
+}
+
+/* Responsividade para dispositivos móveis menores (largura máxima de 480px) */
+@media (max-width: 480px) {
+  .container_img img {
+      width: 90%;
+  }
+
+  .banner {
+      height: auto;
+  }
+
+  .titulo h1 {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+  .careers-item {
+      padding: 1rem;
+  }
+
+  .footer .icones img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .sesi, .senai {
+      font-size: 0.8rem;
+  }
+}
