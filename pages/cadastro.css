@@ -193,3 +193,87 @@ body {
 .links a:hover {
     text-decoration: underline;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container_header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .container_img {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .container_img img {
+        width: 50%;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    .nav a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .menu-dropdown {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-dropdown ul {
+        padding: 10px;
+    }
+
+    .login-container {
+        width: 90%;
+        margin-top: 4rem;
+    }
+
+    .header h2 {
+        font-size: 1.3em;
+    }
+
+    .login-form label,
+    .login-form input,
+    .login-button {
+        width: 100%;
+    }
+
+    .login-form label {
+        text-align: center;
+    }
+
+    .login-button {
+        width: 100%;
+    }
+}
+
+/* Responsividade para dispositivos móveis muito pequenos */
+@media (max-width: 480px) {
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .nav {
+        display: none; /* Esconde o menu de navegação para telas muito pequenas */
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .login-container {
+        padding: 10px;
+    }
+}

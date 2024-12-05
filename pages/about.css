@@ -413,3 +413,128 @@ hr {
         margin: 10px 0;
     }
 }
+
+@media (max-width: 768px) {
+    /* Header e navegação */
+    .container_header {
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .container_img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container_img img {
+        width: 80%; /* Ajuste para a imagem */
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 18px;
+        padding: 8px;
+        width: 100%;
+    }
+
+    /* Menu dropdown */
+    .menu-dropdown {
+        display: none;
+        background-color: var(--vermelho_escuro);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 100%;
+        border-radius: 8px;
+        z-index: 10;
+    }
+
+    .menu-dropdown ul {
+        list-style: none;
+        padding: 15px;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-dropdown ul li a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .menu-dropdown ul li a:hover {
+        background-color: #5c0202;
+    }
+
+    /* Cards */
+    .equipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .senai, .sesi {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .icones {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .icones img {
+        margin: 10px 0;
+    }
+}
+
+/* Para telas menores de 480px */
+@media (max-width: 480px) {
+    .nav a {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .card img {
+        width: 80%;
+        height: auto;
+    }
+}
