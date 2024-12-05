@@ -81,32 +81,59 @@ body {
 }
 
 
-/* Navegação */
-
-.navegacao {
+/* Menu */
+.icon-menu {
   display: flex;
-  padding: 2rem 0;
-  justify-content: center;
-  gap: 6%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 35px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
-.navegacao a {
-  background-color: #d3d3d3;
-  padding: 4px 30px;
-  border-radius: 18px;
+.line1, .line2, .line3 {
+   background-color: #ffffff;
+   height: 4px;
+   width: 100%;
+   border-radius: 2px;
+}
+
+.menu-dropdown {
+  display: none;
+  background-color: #9a1915;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 150px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.menu-dropdown ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  flex-direction: column;
+}
+
+.menu-dropdown ul li {
+  margin: 0.1rem;
+}
+
+.menu-dropdown ul li a {
   text-decoration: none;
+  font-size: 10px;
+  color: #ffffff;
+  font-size: 25px;
+  display: block;
 }
 
-.navegacao a:hover {
-  background-color: var(--vermelho);
+.menu-dropdown ul li a:hover {
+  background-color: #5c0202;
+  border-radius: 5px;
 }
-
-.navegacao li {
-  font-size: 15px;
-  color: var(--preto);
-  list-style-type: none;
-}
-
 .divisoria_nav {
   background-color: var(--vermelho);
   width: 10%;
