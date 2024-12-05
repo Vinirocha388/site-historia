@@ -182,7 +182,11 @@ body {
   max-height: 5rem;
   width: 50%;
   width: 70%;
-}
+  }
+
+  .texto a{
+    text-decoration: none;
+  }
 
 /* Footer */
 
